@@ -1,2 +1,2 @@
 
-.. image:: users-groups.png
+.. image:: screenshot.png
