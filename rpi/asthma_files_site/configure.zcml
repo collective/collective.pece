@@ -10,7 +10,7 @@
 
     <gs:registerProfile
         name="default"
-        description="Install 'Asthma Files Site'" 
+        description="Installs 'Asthma Files Site' functionality"
         directory="profiles/default"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         title="Asthma Files Site"
