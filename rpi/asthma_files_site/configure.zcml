@@ -1,10 +1,19 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser">
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:gs="http://namespaces.zope.org/genericsetup">
 
     <browser:resource
         name="ploneCustom.css"
         file="ploneCustom.css"
+        />
+
+    <gs:registerProfile
+        name="default"
+        description="Install 'Asthma Files Site'" 
+        directory="profiles/default"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        title="Asthma Files Site"
         />
 
 </configure>
