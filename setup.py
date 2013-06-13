@@ -8,5 +8,8 @@ setup(
     namespace_packages=['rpi'],
     entry_points={
         'z3c.autoinclude.plugin': 'target = plone',
-    }
+    },
+    install_requires=[
+        'setuptools',
+    ],
 )
