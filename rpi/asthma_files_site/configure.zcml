@@ -1,12 +1,5 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:gs="http://namespaces.zope.org/genericsetup">
-
-    <browser:resource
-        name="ploneCustom.css"
-        file="ploneCustom.css"
-        />
 
     <gs:registerProfile
         name="default"
@@ -15,5 +8,7 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         title="Asthma Files Site"
         />
+
+    <plone:static directory="theme" type="theme" />
 
 </configure>
