@@ -1,8 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <rules
     xmlns="http://namespaces.plone.org/diazo"
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <theme href="index.html" />
+    <rules css:if-content="#visual-portal-wrapper">
+
+        <!-- Based on Twitter Bootstrap theme in themeeditor -->
+
+        <theme href="index.html" />
+
+        <!-- Head elements -->
+        <replace css:theme="html head title" css:content="html head title" />
+        <after css:theme-children="html head" css:content="html head base" />
+        <after css:theme-children="html head" css:content="html head script" />
+
+        <!-- Logo -->
+        <copy attributes="href" css:theme="#portal-logo" css:content="#portal-logo" />
+
+        <!-- Tabs -->
+        <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
+
+        <!-- Personal tools -->
+        <replace css:theme="#portal-personaltools" css:content="#portal-personaltools" />
+
+        <!-- Search -->
+        <copy attributes="action" css:theme="#portal-searchbox form" css:content="#portal-searchbox form" />
+        <copy attributes="name" css:theme="#portal-searchbox form .searchField" css:content="#portal-searchbox form .searchField" />
+
+        <!-- Edit bar -->
+        <before css:theme-children="#edit-bar" css:content="#edit-bar" />
+
+        <!-- Portal messages -->
+
+        <!-- Main columns -->
+        <replace css:content-children="#content" css:theme-children="#content" />
+        <replace css:content-children="#portal-column-one" css:theme-children="#portal-column-one" />
+        <replace css:content-children="#portal-column-two" css:theme-children="#portal-column-two" />
+
+        <!-- Footer -->
+        <replace css:theme-children="#portal-footer" css:content-children="#portal-footer" />
+        <after css:theme-children="#portal-siteactions" css:content="#portal-siteactions" />
+
+    </rules>
 
 </rules>
