@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 
     <link href="++theme++rpi.asthma_files_site/base.css" rel="stylesheet" type="text/css" media="screen" />
@@ -9,6 +10,8 @@
     <link href="++theme++rpi.asthma_files_site/ploneCustom.css" rel="stylesheet" type="text/css" media="screen" />
 
 </head>
+
+<body class="template-document_view portaltype-document site-Plone section-front-page icons-on userrole-manager userrole-authenticated userrole-owner" dir="ltr">
 
 <div id="visual-portal-wrapper">
 
@@ -25,14 +28,33 @@
 
 <p class="hiddenStructure">Personal tools</p>
 
+<dl class="actionMenu deactivated" id="portal-personaltools">
+  
+  <dt class="actionMenuHeader">
+    <a id="user-name" href="http://localhost:8080/Plone/useractions">admin</a>
+  </dt>
+  <dd class="actionMenuContent">
+    <ul>
+        <li id="personaltools-dashboard">
+            <a href="http://localhost:8080/Plone/dashboard">Dashboard</a>
+        </li>
+        <li id="personaltools-preferences">
+            <a href="http://localhost:8080/Plone/@@personal-preferences">Preferences</a>
+        </li>
+        <li id="personaltools-plone_setup">
+            <a href="http://localhost:8080/Plone/@@overview-controlpanel">Site Setup</a>
+        </li>
+        <li id="personaltools-logout">
+            <a href="http://localhost:8080/Plone/logout">Log out</a>
+        </li>
+    </ul>
+  </dd>
+  
+</dl>
 
 
-<ul class="actionMenu deactivated" id="portal-personaltools"><li id="anon-personalbar">
-    
-        <a href="http://localhost:8080/Plone/login" id="personaltools-login">Log in</a>
-    
-  </li>
-</ul></div>
+
+</div>
 
 
 
@@ -43,8 +65,13 @@
         <div class="LSBox">
         <label class="hiddenStructure" for="searchGadget">Search Site</label>
 
-        <input name="SearchableText" type="text" size="18" title="Search Site" placeholder="Search Site" accesskey="4" class="searchField" id="searchGadget" /><input class="searchButton" type="submit" value="Search" /><div class="searchSection">
-            <input id="searchbox_currentfolder_only" class="noborder" type="checkbox" name="path" value="/Plone" /><label for="searchbox_currentfolder_only" style="cursor: pointer">
+        <input name="SearchableText" type="text" size="18" title="Search Site" placeholder="Search Site" accesskey="4" class="searchField" id="searchGadget" />
+
+        <input class="searchButton" type="submit" value="Search" />
+
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only" class="noborder" type="checkbox" name="path" value="/Plone" />
+            <label for="searchbox_currentfolder_only" style="cursor: pointer">
                 only in current section
             </label>
         </div>
@@ -55,7 +82,7 @@
 
     <div id="portal-advanced-search" class="hiddenStructure">
         <a href="http://localhost:8080/Plone/@@search" accesskey="5">
-            Advanced Search…
+            Advanced Search&hellip;
         </a>
     </div>
 
@@ -67,7 +94,10 @@
 
     <p class="hiddenStructure">Navigation</p>
 
-    <ul id="portal-globalnav"><li id="portaltab-index_html" class="selected"><a href="http://localhost:8080/Plone" title="">Home</a></li><li id="portaltab-news" class="plain"><a href="http://localhost:8080/Plone/news" title="Site News">News</a></li><li id="portaltab-events" class="plain"><a href="http://localhost:8080/Plone/events" title="Site Events">Events</a></li><li id="portaltab-Members" class="plain"><a href="http://localhost:8080/Plone/Members" title="Site Users">Users</a></li></ul></div>
+    <ul id="portal-globalnav"><li id="portaltab-index_html" class="selected"><a href="http://localhost:8080/Plone" title="">Home</a></li><li id="portaltab-news" class="plain"><a href="http://localhost:8080/Plone/news" title="Site News">News</a></li><li id="portaltab-events" class="plain"><a href="http://localhost:8080/Plone/events" title="Site Events">Events</a></li><li id="portaltab-Members" class="plain"><a href="http://localhost:8080/Plone/Members" title="Site Users">Users</a></li></ul>
+
+
+</div>
 
 </div>
         </div>
@@ -85,18 +115,303 @@ are here:</span>
     </span>
 
 </div>
+
+<div id="plone-lock-status">
+  
+</div>
 </div>
 
             
-                <div class="">
+                <div class="documentEditable">
+
+                    <div id="edit-bar">
+
+    
+
+        <p class="hiddenStructure">Views</p>
+
+        <ul class="contentViews" id="content-views">
+
+            
+              <li id="contentview-folderContents" class="plain">
+                <a href="http://localhost:8080/Plone/folder_contents">Contents</a>
+              </li>
+            
+            
+              <li id="contentview-view" class="selected">
+                <a href="http://localhost:8080/Plone/front-page">View</a>
+              </li>
+            
+            
+              <li id="contentview-edit" class="plain">
+                <a href="http://localhost:8080/Plone/front-page/edit">Edit</a>
+              </li>
+            
+            
+              <li id="contentview-contentrules" class="plain">
+                <a href="http://localhost:8080/Plone/@@manage-content-rules">Rules</a>
+              </li>
+            
+            
+              <li id="contentview-local_roles" class="plain">
+                <a href="http://localhost:8080/Plone/front-page/@@sharing">Sharing</a>
+              </li>
+            
+
+        </ul>
+
+    
+
+
+<div class="contentActions">
+
+    
+
+        
+
+        
+
+        <ul id="contentActionMenus">
+
+    <li>
+
+        <dl class="actionMenu deactivated" id="plone-contentmenu-workflow">
+          <dt class="actionMenuHeader label-state-published">
+            <a href="http://localhost:8080/Plone/front-page/content_status_history" title="Change the state of this item">
+               
+                  <span>State:</span>
+                  <span class="state-published">Published</span>
+                  <span class="arrowDownAlternative">&#9660;</span>
+               
+            </a>
+          </dt>
+          <dd class="actionMenuContent">
+            <ul>
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/front-page/content_status_modify?workflow_action=reject" class="kssIgnore" id="workflow-transition-reject" title="Sending the item back will return the item to the original author instead of publishing it. You should preferably include a reason for why it was not published.">
+                        
+                        <span class="subMenuTitle">Send back</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/front-page/content_status_modify?workflow_action=retract" class="kssIgnore" id="workflow-transition-retract" title="If you submitted the item by mistake or want to perform additional edits, this will take it back.">
+                        
+                        <span class="subMenuTitle">Retract</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li class="actionSeparator">
+                    <a href="http://localhost:8080/Plone/front-page/content_status_history" class="kssIgnore" id="workflow-transition-advanced" title="">
+                        
+                        <span class="subMenuTitle">Advanced...</span>
+                    </a>
+                    
+                  </li>
+                
+            </ul>
+          </dd>
+        </dl>
+
+    </li>
+    <li>
+
+        <dl class="actionMenu deactivated" id="plone-contentmenu-factories">
+          <dt class="actionMenuHeader label-">
+            <a href="http://localhost:8080/Plone/folder_factories" title="Add new items inside this item">
+               
+                  <span>Add new…</span>
+                  
+                  <span class="arrowDownAlternative">&#9660;</span>
+               
+            </a>
+          </dt>
+          <dd class="actionMenuContent">
+            <ul>
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/createObject?type_name=Collection" class="contenttype-collection" id="collection" title="Collection of searchable information">
+                        
+                        <span class="subMenuTitle">Collection</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/createObject?type_name=Event" class="contenttype-event" id="event" title="Events can be shown in calendars.">
+                        
+                        <span class="subMenuTitle">Event</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/createObject?type_name=File" class="contenttype-file" id="file" title="Lets you upload a file to the site.">
+                        
+                        <span class="subMenuTitle">File</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/createObject?type_name=Folder" class="contenttype-folder" id="folder" title="">
+                        
+                        <span class="subMenuTitle">Folder</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/createObject?type_name=Image" class="contenttype-image" id="image" title="Images can be referenced in pages or displayed in an album.">
+                        
+                        <span class="subMenuTitle">Image</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/createObject?type_name=Link" class="contenttype-link" id="link" title="Links to an internal or external resource.">
+                        
+                        <span class="subMenuTitle">Link</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/createObject?type_name=News+Item" class="contenttype-news-item" id="news-item" title="An announcement that will show up in news listings.">
+                        
+                        <span class="subMenuTitle">News Item</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/createObject?type_name=Document" class="contenttype-document" id="document" title="">
+                        
+                        <span class="subMenuTitle">Page</span>
+                    </a>
+                    
+                  </li>
+                
+            </ul>
+          </dd>
+        </dl>
+
+    </li>
+    <li>
+
+        <dl class="actionMenu deactivated" id="plone-contentmenu-display">
+          <dt class="actionMenuHeader label-">
+            <a href="http://localhost:8080/Plone/select_default_view" title="Select the view mode for this folder, or set a content item as its default view.">
+               
+                  <span>Display</span>
+                  
+                  <span class="arrowDownAlternative">&#9660;</span>
+               
+            </a>
+          </dt>
+          <dd class="actionMenuContent">
+            <ul>
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=folder_listing" class="" id="folder-folder_listing" title="">
+                        
+                        <span class="subMenuTitle">Standard view</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=folder_summary_view" class="" id="folder-folder_summary_view" title="">
+                        
+                        <span class="subMenuTitle">Summary view</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=folder_full_view" class="" id="folder-folder_full_view" title="">
+                        
+                        <span class="subMenuTitle">All content</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=folder_tabular_view" class="" id="folder-folder_tabular_view" title="">
+                        
+                        <span class="subMenuTitle">Tabular view</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=atct_album_view" class="" id="folder-atct_album_view" title="">
+                        
+                        <span class="subMenuTitle">Thumbnail view</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li class="actionSeparator">
+                    
+                    <div id="folderDefaultPageDisplay" class="actionMenuSelected">
+                        
+                        <span class="subMenuTitle">Item: Welcome to Plone</span>
+                    </div>
+                  </li>
+                
+                
+                  <li class="actionSeparator">
+                    <a href="http://localhost:8080/Plone/select_default_page" class="" id="folderChangeDefaultPage" title="Change the item used as default view in this folder">
+                        
+                        <span class="subMenuTitle">Change content item as default view...</span>
+                    </a>
+                    
+                  </li>
+                
+            </ul>
+          </dd>
+        </dl>
+
+    </li>
+
+</ul>
+
+
+    
+
+</div>
+</div>
 
                     
 
-                    
-
-    <dl class="portalMessage info" id="kssPortalMessage" style="display:none"><dt>Info</dt>
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
         <dd></dd>
-    </dl><div id="content">
+    </dl>
+
+
+
+                    
+                        <div id="content">
 
                             
 
@@ -114,7 +429,44 @@ are here:</span>
             
         
                              
-                             <div id="viewlet-below-content-title">
+                             <div id="viewlet-below-content-title"><div class="documentByLine" id="plone-document-byline">
+  
+
+  
+  
+    <span class="documentAuthor">
+      
+      by
+      <a href="http://localhost:8080/Plone/author/admin">admin</a>
+      
+         —
+    </span>
+  
+  
+
+  
+  
+
+  <span class="documentModified">
+    <span>
+      last modified
+    </span>
+    Jun 13, 2013 03:48 PM
+  </span>
+  
+
+  
+
+  <span class="contentHistory" id="content-history">
+    —
+    <a href="http://localhost:8080/Plone/front-page/@@historyview">History</a>
+  </span>
+
+  
+
+  
+
+</div>
 </div>
 
                              
@@ -149,15 +501,19 @@ Plone mailing lists about this.
 Before you start exploring your newly created Plone site, please do the following:
 </p>
 
-<ol><li>Make sure you are logged in as an admin/manager user.
+<ol>
+    <li>Make sure you are logged in as an admin/manager user.
         <span class="discreet">(You should have a Site Setup entry in the menu in the top right corner)</span></li>
     <li><a href="http://localhost:8080/Plone/@@mail-controlpanel">Set up your mail server</a>. <span class="discreet">(Plone needs a valid SMTP server to verify users and send out password reminders)</span></li>
     <li><a href="http://localhost:8080/Plone/@@security-controlpanel">Decide what security level you want on your site</a>. <span class="discreet">(Allow self registration, password policies, etc)</span></li>
-</ol><h2>Get comfortable</h2>
+</ol>
+
+<h2>Get comfortable</h2>
 
 <p>After that, we suggest you do one or more of the following:</p>
 
-<ul><li>Find out <a class="link-plain" href="http://plone.org/products/plone/features/" target="_blank">What's new in Plone</a>.</li>
+<ul>
+    <li>Find out <a class="link-plain" href="http://plone.org/products/plone/features/" target="_blank">What's new in Plone</a>.</li>
     <li>Read the <a class="link-plain" href="http://plone.org/documentation" target="_blank">documentation</a>, especially the
         <a class="link-plain" href="http://plone.org/documentation/phc_topic_area?topic=Basic+Use" target="_blank">Documentation for content editors</a>
         and
@@ -165,11 +521,14 @@ Before you start exploring your newly created Plone site, please do the followin
     </li>
     <li>Explore the <a class="link-plain" href="http://plone.org/products" target="_blank">available add-ons</a> for Plone.</li>
     <li>Read and/or subscribe to the <a class="link-plain" href="http://plone.org/support" target="_blank">support forums</a>.</li>
-</ul><h2>Make it your own</h2>
+</ul>
+
+<h2>Make it your own</h2>
 
 <p>Plone has a lot of different settings that can be used to make it do what you want it to. Some examples:</p>
 
-<ul><li>
+<ul>
+    <li>
     Try out a different theme, either pick from
     <a href="http://localhost:8080/Plone/@@skins-controlpanel">the included ones</a>, or one of the
     <a class="link-plain" href="http://plone.org/products/by-category/themes" target="_blank">available themes
@@ -196,7 +555,9 @@ Before you start exploring your newly created Plone site, please do the followin
         <a href="http://localhost:8080/Plone/plone_control_panel">Site Setup</a>.
     </li>
 
-</ul><h2>Tell us how you use it</h2>
+</ul>
+
+<h2>Tell us how you use it</h2>
 
 <p>
 Are you doing something interesting with Plone? Big site deployments,
@@ -204,36 +565,45 @@ interesting use cases? Do you have a company that delivers Plone-based
 solutions?
 </p>
 
-<ul><li>Add your sites to the <a class="link-plain" href="http://plone.net/sites" target="_blank">Plone site listing</a>.
+<ul>
+    <li>Add your sites to the <a class="link-plain" href="http://plone.net/sites" target="_blank">Plone site listing</a>.
         <span class="discreet">(Or see what sites are already out there!)</span>
     </li>
     <li>Add your company as a <a class="link-plain" href="http://plone.net/providers" target="_blank">Plone provider</a>.</li>
     <li>Add a <a class="link-plain" href="http://plone.net/case-studies" target="_blank">case study</a> describing your
         deployed project and customer.</li>
-</ul><h2>Find out more about our architecture</h2>
+</ul>
+
+<h2>Find out more about our architecture</h2>
 
 <p>
 Plone is based on the Zope application server, and uses the Python programming
 language. More about these technologies:
 </p>
 
-<ul><li>The <a class="link-plain" href="http://plone.org" target="_blank">Plone open source
+<ul>
+<li>The <a class="link-plain" href="http://plone.org" target="_blank">Plone open source
     Content Management System</a> web site.</li>
 <li>The <a class="link-plain" href="http://zope2.zope.org" target="_blank">Zope
     application server</a> web site.</li>
 <li>The <a class="link-plain" href="http://www.python.org" target="_blank">Python
     programming language</a> web site.</li>
-</ul><h2>Donate to the Plone Foundation</h2>
+</ul>
+
+<h2>Donate to the Plone Foundation</h2>
 
 <p>
 Plone is made possible only through the efforts of thousands of dedicated
 individuals and hundreds of companies. The Plone Foundation:
 </p>
-<ul><li>…protects and promotes Plone.</li>
+<ul>
+    <li>…protects and promotes Plone.</li>
     <li>…is a registered 501(c)(3) charitable organization.</li>
     <li>…donations are tax-deductible.</li>
     <li><a href="http://plone.org/foundation/foundation-donations">Show your support!</a></li>
-</ul><p>Thanks for using our product, we hope you like it!</p>
+</ul>
+
+<p>Thanks for using our product, we hope you like it!</p>
 
 <p>—The Plone Team</p>
             
@@ -269,7 +639,11 @@ individuals and hundreds of companies. The Plone Foundation:
 
 
 
-
+<div class="row">
+    <a class="managePortletsFallback" href="http://localhost:8080/Plone/front-page/@@manage-portlets">
+        Manage portlets
+    </a>
+</div>
 
 </div>
         </div>
@@ -288,9 +662,9 @@ individuals and hundreds of companies. The Plone Foundation:
           <p>
                
                The
-               <a href="http://plone.org">Plone<sup>®</sup> Open Source CMS/WCM</a>
+               <a href="http://plone.org">Plone<sup>&reg;</sup> Open Source CMS/WCM</a>
                is
-               <abbr title="Copyright">©</abbr>
+               <abbr title="Copyright">&copy;</abbr>
                2000-2013
                by the
                <a href="http://plone.org/foundation">Plone Foundation</a>
@@ -307,20 +681,28 @@ individuals and hundreds of companies. The Plone Foundation:
 
 <div id="portal-colophon">
 <div class="colophonWrapper">
-<ul><li>
+<ul>
+  <li>
     <a href="http://plone.org" title="This site was built using the Plone Open Source CMS/WCM.">
       Powered by Plone &amp; Python</a>
   </li>
-</ul></div>
+</ul>
+</div>
 </div>
 
-<ul id="portal-siteactions"><li id="siteaction-sitemap"><a href="http://localhost:8080/Plone/sitemap" accesskey="3" title="Site Map">Site Map</a></li>
+<ul id="portal-siteactions">
+
+    <li id="siteaction-sitemap"><a href="http://localhost:8080/Plone/sitemap" accesskey="3" title="Site Map">Site Map</a></li>
     <li id="siteaction-accessibility"><a href="http://localhost:8080/Plone/accessibility-info" accesskey="0" title="Accessibility">Accessibility</a></li>
     <li id="siteaction-contact"><a href="http://localhost:8080/Plone/contact-info" accesskey="9" title="Contact">Contact</a></li>
-</ul></div>
+</ul>
+
+
+        </div>
     </div>
 
 
 
 </div>
-</body></html>
+</body>
+</html>
