@@ -1,5 +1,6 @@
 <configure
-    xmlns:gs="http://namespaces.zope.org/genericsetup">
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone">
 
     <gs:registerProfile
         name="default"
