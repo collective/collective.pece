@@ -3,6 +3,7 @@
     xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:plone="http://namespaces.plone.org/plone">
 
+    <include package="five.grok" />
     <grok:grok package="." />
 
     <gs:registerProfile

@@ -5,5 +5,4 @@
  <object name="annotation" meta_type="Dexterity FTI"/>
  <object name="response" meta_type="Dexterity FTI"/>
  <object name="question" meta_type="Dexterity FTI"/>
- <!---*- extra stuff goes here -*--->
 </object>
