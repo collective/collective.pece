@@ -1,6 +1,9 @@
 <configure
     xmlns:gs="http://namespaces.zope.org/genericsetup"
+    xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:plone="http://namespaces.plone.org/plone">
+
+    <grok:grok package="." />
 
     <gs:registerProfile
         name="default"
