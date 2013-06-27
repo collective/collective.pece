@@ -13,7 +13,7 @@ class ImageArtifactView():
 
     def get_image(self):
         return '/'.join([self.context.absolute_url(),
-            self.context.image.filename], 'image_preview')
+            self.context.image.filename, 'image_preview'])
 
     def get_questions(self):
         return self.context.portal_catalog(portal_type="question")
