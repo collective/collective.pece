@@ -1,0 +1,11 @@
+<configure
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <browser:page
+        for="*"
+        name="image-artifact-view"
+        permission="zope2.Public"
+        class=".image_artifact.ImageArtifactView"
+        />
+
+</configure>
