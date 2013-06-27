@@ -8,9 +8,4 @@
         class=".image_artifact.ImageArtifactView"
         />
 
-    <browser:resource
-        name="logo.png"
-        image="static/img/VlogoWhite250.gif"
-        />
-
 </configure>

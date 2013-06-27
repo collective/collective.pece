@@ -5,6 +5,11 @@
 
     <include package="five.grok" />
 
+    <browser:resource
+        name="asthma-files-logo.png"
+        image="theme/images/logo.png"
+        />
+
     <grok:grok package="." />
 
     <gs:registerProfile
