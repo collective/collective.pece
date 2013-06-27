@@ -1,47 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <rules
     xmlns="http://namespaces.plone.org/diazo"
-    xmlns:css="http://namespaces.plone.org/diazo/css"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    xmlns:css="http://namespaces.plone.org/diazo/css">
 
-    <rules css:if-content="#visual-portal-wrapper">
+    <theme href="index.html" />
 
-        <!-- Based on Twitter Bootstrap theme in themeeditor -->
+    <replace css:theme="html head title" css:content="html head title" />
+    <replace css:theme="html head base" css:content="html head base" />
 
-        <theme href="index.html" />
+    <replace css:content="#portal-colophon" css:theme="#portal-colophon" /> 
+    <replace css:content="#portal-column-content" css:theme="#portal-column-content" /> 
+    <replace css:content="#portal-column-one" css:theme="#portal-column-one" /> 
+    <replace css:content="#portal-column-two" css:theme="#portal-column-two" /> 
+    <replace css:content="#portal-footer" css:theme="#portal-footer" /> 
+    <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" /> 
+    <replace css:content="#portal-logo" css:theme="#portal-logo" /> 
+    <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
+    <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" /> 
+    <replace css:content="#portal-siteactions" css:theme="#portal-siteactions" /> 
 
-        <!-- Head elements -->
-        <replace css:theme="html head title" css:content="html head title" />
-        <after css:theme-children="html head" css:content="html head base" />
-        <after css:theme-children="html head" css:content="html head script" />
+    <!-- Uncomment to remove diazo branding
+    <drop css:theme="#diazo_branding" /> 
+    -->
 
-        <!-- Logo -->
-        <copy attributes="href" css:theme="#portal-logo" css:content="#portal-logo" />
-
-        <!-- Tabs -->
-        <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
-
-        <!-- Personal tools -->
-        <replace css:theme="#portal-personaltools" css:content="#portal-personaltools" />
-
-        <!-- Search -->
-        <copy attributes="action" css:theme="#portal-searchbox form" css:content="#portal-searchbox form" />
-        <copy attributes="name" css:theme="#portal-searchbox form .searchField" css:content="#portal-searchbox form .searchField" />
-
-        <!-- Edit bar -->
-        <before css:theme-children="#edit-bar" css:content="#edit-bar" />
-
-        <!-- Portal messages -->
-
-        <!-- Main columns -->
-        <replace css:content-children="#content" css:theme-children="#content" />
-        <replace css:content-children="#portal-column-one" css:theme-children="#portal-column-one" />
-        <replace css:content-children="#portal-column-two" css:theme-children="#portal-column-two" />
-
-        <!-- Footer -->
-        <replace css:theme-children="#portal-footer" css:content-children="#portal-footer" />
-        <after css:theme-children="#portal-siteactions" css:content="#portal-siteactions" />
-
-    </rules>
+    <!-- Presentation view not working -->
+    <drop css:content="#link-presentation" />
 
 </rules>

@@ -516,8 +516,8 @@ input.searchPage {
     font-size:200% !important;
 }
 #rss-subscription {
-    float: left;
-    line-height: 3em;
+	float: left;
+	line-height: 3em;
 }
 #search-results-bar .actionMenuContent {
     margin-top: 1em;
@@ -557,8 +557,8 @@ input.searchPage {
 form.searchPage h1.documentFirstHeading {
     font-weight:normal;
     letter-spacing:0;
-    float: left;
-    margin-right: 0.8em;
+	float: left;
+	margin-right: 0.8em;
 }
 form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
     background: transparent !important;
@@ -567,7 +567,7 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
     float: left;
 }
 #searchResultsSort{
-    float:right;
+	float:right;
 }
 #search-results-bar {
     position: relative;
@@ -589,7 +589,7 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
     border-bottom: none;
 }
 #search-results-bar dt.actionMenuHeader a::after {
-    content: " ▼";
+	content: " ▼";
 }
 #search-results {
     padding: 1em;
@@ -1116,4 +1116,3 @@ a.historyComparePrevious span {
     margin-left: -10px;
 }
 /* @end */
-
