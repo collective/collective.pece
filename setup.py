@@ -12,5 +12,6 @@ setup(
     install_requires=[
         'setuptools',
         'five.grok',
+        'z3c.jbot',
     ],
 )
