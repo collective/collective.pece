@@ -1,9 +1,15 @@
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile as view_with_template
-from zope.publisher.browser import BrowserPage as View
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 
 class ImageArtifactView():
     """
+    Return a list of questions
     """
+
+    image_artifact_view = ViewPageTemplateFile('image_artifact_view.pt')
+
     def __call__(self):
-        return view_with_template('image_artifact_view.pt')(self)
+        return self.image_artifact_view()
+
+    def get_questions(self):
+        return self.context.portal_catalog(portal_type="question")

@@ -1,4 +1,7 @@
 <div metal:use-macro="here/main_template/macros/master">
 <div metal:fill-slot="main">
+    <ul tal:repeat="question view/get_questions">
+        <li><a tal:attributes="href question/getURL" tal:content="question/Title"></a></li> 
+    </ul>
 </div>
 </div>
