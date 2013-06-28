@@ -6,6 +6,7 @@
     </ul>
     <div style="text-align: center;"> 
         <img style="margin: 1em; padding: 1em; border: 1px solid gray" tal:attributes="src view/get_image" />
+        <img tal:replace="structure view/context/@@images/image/thumb" />
     </div>
 </div>
 </div>
