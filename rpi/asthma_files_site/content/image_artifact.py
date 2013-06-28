@@ -4,7 +4,6 @@ import base64
 
 class ImageArtifactView():
     """
-    Return a list of questions
     """
 
     image_artifact_view = ViewPageTemplateFile('image_artifact_view.pt')
