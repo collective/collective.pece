@@ -4,4 +4,4 @@
    tal:attributes="href view/navigation_root_url;
                    title view/navigation_root_title"
    i18n:domain="plone"
-   i18n:attributes="title"><img src="++resource++asthma-files-logo.png" alt="" /></a>
+   i18n:attributes="title"><img src="++resource++asthma_files_logo.png" alt="" /></a>

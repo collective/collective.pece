@@ -9,7 +9,7 @@
 
     <browser:jbot directory="template-overrides" />
     <browser:resource
-        name="asthma-files-logo.png"
+        name="asthma_files_logo.png"
         image="theme/images/logo.png"
         />
 
