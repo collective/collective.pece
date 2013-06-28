@@ -4,6 +4,8 @@
         <!-- Don't need to dispay this list anymore ^ but we'll leave it here just in case. -->
         <li><a tal:attributes="href question/getURL" tal:content="question/Title"></a></li>
     </ul>
-    <img tal:attributes="src view/get_image" />
+    <div style="text-align: center;"> 
+        <img style="margin: 1em; padding: 1em; border: 1px solid gray" tal:attributes="src view/get_image" />
+    </div>
 </div>
 </div>
