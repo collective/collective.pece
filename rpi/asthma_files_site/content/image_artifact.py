@@ -12,8 +12,8 @@ class ImageArtifactView():
         return self.image_artifact_view()
 
     def get_image(self):
-        return '/'.join([self.context.absolute_url(),
-            self.context.image.filename])
+        return "data:%s;%s" % (self.context.image.contentType,
+            self.context.image.data)
 
     def get_questions(self):
         return self.context.portal_catalog(portal_type="question")
