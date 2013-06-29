@@ -1,0 +1,42 @@
+.carousel {
+    position: relative;
+    margin-bottom: 1em;
+}
+.carousel-banner {
+    display: none;
+    overflow: hidden;
+}
+.carousel-text {
+    background-color: #DDDDDD;
+    bottom: 0;
+    left: 0;
+    padding: 2%;
+    position: absolute;
+    width: 96%;
+}
+.carousel-banner-1 {
+    display: block;
+}
+.carousel-pager {
+    margin: 0.75em 0;
+}
+.carousel-pager-item,
+.carousel-pager-button-prev,
+.carousel-pager-button-next {
+    background-color: #DDDDDD;
+    padding: 0.25em 0.5em;
+}
+.carousel-pager-item-active {
+    background-color: #75AD0A;
+}
+.carousel-pager-item-active:link,
+.carousel-pager-item-active:visited,
+.carousel-pager-item-active .carousel-title {
+    color: white;
+}
+.carousel-pager-item-classic {
+    cursor: pointer;
+}
+.carousel-settings-introduction {
+    margin-bottom: 1em;
+}
