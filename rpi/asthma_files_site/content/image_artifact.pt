@@ -4,8 +4,8 @@
         <!-- Don't need to dispay this list anymore ^ but we'll leave it here just in case. -->
         <li><a tal:attributes="href question/getURL" tal:content="question/Title"></a></li>
     </ul>
-    <div style="text-align: center" tal:condition="python: False">
-        <img tal:replace="structure view/context/@@images/image/thumb" />
+    <div style="text-align: center">
+        <img tal:condition="python: False" tal:replace="structure view/context/@@images/image/thumb" />
     </div>
 </div>
 </div>
