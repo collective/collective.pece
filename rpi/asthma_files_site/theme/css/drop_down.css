@@ -1,0 +1,110 @@
+/* DropDown Menu Styles */
+
+body {
+  behavior:url("/@@csshover.htc");
+  }
+#portal-top {
+  z-index:1;
+  }
+#portal-searchbox {
+  position:relative;
+  z-index:2;
+  }  
+
+/*---------- BASIC STYLE one level ----------*/
+#portal-globalnav {
+  list-style-image:none;
+  position:relative; /* fix ie */
+  zoom:1; /* fix ie */
+  }
+#portal-globalnav:after {
+  content:"";
+  clear:both;
+  display:block;
+  visibility:hidden;
+  }
+#portal-globalnav li {
+  display:block;
+  float:left;
+  position:relative;
+  }
+#portal-globalnav li a {
+  display:block;
+  line-height:2em;
+  padding:1px 1em 21px;
+  }
+#portal-globalnav li.selected a {
+  background-color:#205C90;
+  color:#fff;
+  }
+#portal-globalnav li a span {
+  cursor:pointer; /* fix ie */
+  display:block; /* fix ie */
+  white-space: normal;
+  }
+
+/*----- DropDown -----*/
+#portal-globalnav li ul {
+  display:none;
+  left:0;
+  position:absolute;
+  top:100%;
+  z-index:1000;
+  }
+#portal-globalnav li:hover > ul {
+  display:block;
+  }
+#portal-globalnav ul li {
+  float:none;
+  margin:0;
+  }
+#portal-globalnav ul li a {
+  background-color:#ddd;
+  border-top:1px solid #fff;
+  height:auto;
+  padding:0.5em 1.5em 0.5em 1em;
+  vertical-align:top;
+  width:12em;
+  }
+#portal-globalnav li.selected ul li a {
+  background-color:#ddd;
+  color:#205C90;
+  }
+#portal-globalnav li ul ul {
+  top:0;
+  left:100%;
+  }
+#portal-globalnav ul li a.hasChildrens {
+  background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
+  background-position:100% 50%;
+  background-repeat:no-repeat;
+  background-color:#ddd;
+  }
+#portal-globalnav ul li a.hasChildrens:hover {
+  background-image:url(++resource++quintagroup.dropdownmenu.images/ddm-pointer.gif);
+  background-position:100% 50%;
+  background-repeat:no-repeat;
+  background-color:#205C90;
+  }
+#portal-globalnav:hover li:hover > a {
+  background-color:#205C90;
+  color:#fff;
+  }
+#portal-globalnav:hover li:hover ul > a {
+  background-color:#ddd;
+  color:#205C90;
+  }
+#portal-globalnav-mobile {
+  display:none;
+  }
+
+@media (max-width:5in) {
+#portal-globalnav.mobileMenuOn {
+  display:none;
+  }
+#portal-globalnav-mobile {
+  display:block;
+  margin:0.5em;
+  min-width:150px;
+  }   
+}
