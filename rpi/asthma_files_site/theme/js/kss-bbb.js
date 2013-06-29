@@ -58,8 +58,7 @@ function applyPortletTimeout(portlet){
 /* dom loaded related actions */
 $(document).ready(function(){
     /* Show animated spinner while AJAX is loading. */
-/*    var spinner = $('<div id="ajax-spinner"><img src="' + portal_url + '/spinner.gif" alt=""/></div>'); */
-
+    /*  var spinner = $('<div id="ajax-spinner"><img src="' + portal_url + '/spinner.gif" alt=""/></div>'); */
     /* XXX Replace spinner with… Plone logo! ;-) Not sure how to work around not having a proper portal_url. */
     var spinner = $('<div id="ajax-spinner"><img src=++resource++plone-logo.png" alt=""/></div>');
 
