@@ -28,6 +28,9 @@
     <!-- Quintagroup Dropdown Menu -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/drop_down.css" />
 
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/carousel.css" />
+
     <style type="text/css" media="screen">@import url(++resource++plone.app.jquerytools.dateinput.css);</style>
     <!--[if lt IE 8]>
         <link rel="stylesheet" type="text/css" media="screen" href="css/IEFixes.css" />
@@ -69,7 +72,13 @@
     <script type="text/javascript" src="js/formsubmithelpers.js"></script>
     <script type="text/javascript" src="js/unlockOnFormUnload.js"></script>
     <script type="text/javascript" src="js/jquery.tinymce.js"></script>
+
+    <!-- Carousel -->
+    <script type="text/javascript" src="js/carousel.js"></script>
+
+    <!--
     <script type="text/javascript" src="http://localhost:8080/Plone/portal_javascripts/Sunburst%20Theme/tiny_mce_gzip.js"></script>
+    -->
     <title>Welcome to Plone &mdash; Site</title>
     <!-- FIXME, suggestions?
     <link rel="author" href="http://localhost:8080/Plone/author/admin" title="Author information" />
@@ -91,8 +100,8 @@
             <div class="cell width-full position-0">
                 <div id="portal-header">
                     <p class="hiddenStructure">
-                        <a accesskey="2" href="http://localhost:8080/Plone#content">Skip to content.</a> |
-                        <a accesskey="6" href="http://localhost:8080/Plone#portal-globalnav">Skip to navigation</a>
+                        <a accesskey="2" href="#content">Skip to content.</a> |
+                        <a accesskey="6" href="#portal-globalnav">Skip to navigation</a>
                     </p>
                     <div id="portal-personaltools-wrapper">
                     </div>
