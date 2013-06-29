@@ -6,7 +6,7 @@ class ImageArtifactView():
     """
     """
 
-    image_artifact_view = ViewPageTemplateFile('image_artifact_view.pt')
+    image_artifact_view = ViewPageTemplateFile('image_artifact.pt')
 
     def __call__(self):
         return self.image_artifact_view()
