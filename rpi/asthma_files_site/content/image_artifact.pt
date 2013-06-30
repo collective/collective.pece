@@ -15,10 +15,10 @@
         <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Add annotation</h3>
+        <h3 id="myModalLabel">Add Annotation</h3>
         </div>
         <div class="modal-body">
-        <p>Please select the questions you would like to respond to in your annotation.</p>
+        <h1>Please select the questions you would like to respond to in your annotation.</h1>
         <form tal:attributes="action view/context/absolute_url" tal:repeat="question view/get_questions">
             <label class="checkbox">
                 <input type="checkbox" tal:attributes="name question/Title; value question/Title"><span tal:content="question/Title"></span>
