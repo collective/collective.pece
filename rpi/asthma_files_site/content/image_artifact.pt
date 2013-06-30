@@ -5,6 +5,7 @@
         <li><a tal:attributes="href question/getURL" tal:content="question/Title"></a></li>
     </ul>
     <div style="text-align: center">
+        <br />
         <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image/thumb" tal:replace="structure view/context/@@images/image/thumb" /></a>
         <br />
         <br />
