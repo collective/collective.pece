@@ -7,8 +7,9 @@
     <div style="text-align: center">
         <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image/thumb" tal:replace="structure view/context/@@images/image/thumb" /></a>
         <br />
+        <br />
         <!-- Button to trigger modal -->
-        <a href="#myModal" role="button" class="btn" data-toggle="modal">Annotate</a>
+        <a href="#myModal" role="button" class="btn btn-large" data-toggle="modal">Annotate</a>
         <!-- Modal -->
         <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
