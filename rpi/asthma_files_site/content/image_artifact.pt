@@ -18,6 +18,7 @@
         <h3 id="myModalLabel">Add annotation</h3>
         </div>
         <div class="modal-body">
+        <p>Please select the questions you would like to answer.</p>
         <form tal:attributes="action view/context/absolute_url" tal:repeat="question view/get_questions">
             <label class="checkbox">
                 <input type="checkbox" tal:attributes="name question/Title; value question/Title"><span tal:content="question/Title"></span>
