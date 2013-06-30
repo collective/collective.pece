@@ -10,7 +10,7 @@
         <br />
         <br />
         <!-- Button to trigger modal -->
-        <a href="#myModal" role="button" class="btn btn-large" data-toggle="modal">Annotate</a>
+        <a href="#myModal" role="button" class="btn btn-large" data-toggle="modal">Add Annotation</a>
         <!-- Modal -->
         <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
