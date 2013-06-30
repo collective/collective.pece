@@ -7,5 +7,7 @@
     <div style="text-align: center">
         <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image/thumb" tal:replace="structure view/context/@@images/image/thumb" /></a>
     </div>
+
+    <button class="btn btn-large btn-primary">foo</button>
 </div>
 </div>
