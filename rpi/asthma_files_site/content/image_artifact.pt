@@ -18,7 +18,7 @@
         <h3 id="myModalLabel">Add Annotation</h3>
         </div>
         <div class="modal-body">
-        <h2>Please select the questions you would like to respond to in this annotation.</h2>
+        <p class="lead">Please select the questions you would like to respond to in this annotation.</p>
         <form tal:attributes="action view/context/absolute_url">
             <div tal:repeat="question view/get_questions">
                 <label class="checkbox">

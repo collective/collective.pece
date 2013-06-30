@@ -11,4 +11,5 @@ class ImageArtifactView():
         return self.image_artifact_view()
 
     def get_questions(self):
-        return self.context.portal_catalog(portal_type="question")
+        return self.context.portal_catalog(portal_type="question",
+            sort_order="reverse")
