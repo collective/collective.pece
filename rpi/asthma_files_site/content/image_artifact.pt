@@ -5,6 +5,8 @@
         <li><a tal:attributes="href question/getURL" tal:content="question/Title"></a></li>
     </ul>
     <div style="text-align: center">
+
+        <h1 tal:content="view/context/Title"></h1>
         <br />
         <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image/thumb" tal:replace="structure view/context/@@images/image/thumb" /></a>
         <br />
@@ -32,6 +34,13 @@
             </div>
         </form>
         </div>
+
+        <hr />
+
+        <h4>Annotations:</h4>
+        <ul tal:repeat="annotation view/context/objectValues">
+            <li><a tal:attributes="href annotation/absolute_url" tal:content="annotation/getId"></a></li>
+        </ul>
     </div>
 </div>
 </div>
