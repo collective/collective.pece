@@ -19,10 +19,10 @@
         </div>
         <form tal:attributes="action view/context/absolute_url" method="POST">
             <div class="modal-body">
-                <p class="lead">Please select the questions you would like to respond to in this annotation.</p>
+                <p class="lead">Respond to questions:</p>
                 <div tal:repeat="question view/get_questions">
                     <label class="checkbox">
-                        <input type="checkbox" tal:attributes="name question/Title; value question/Title"><span tal:content="question/Title"></span>
+                        <input type="checkbox" tal:attributes="name question/UID;value question/Title"><span tal:content="question/Title"></span>
                     </label>
                 </div>
             </div>

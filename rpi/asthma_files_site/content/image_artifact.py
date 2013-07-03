@@ -1,4 +1,7 @@
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from plone.dexterity.utils import createContentInContainer
+from plone.uuid.interfaces import IUUID
+from zope.annotation.interfaces import IAnnotations as IStorage  # Avoid confusion with annotation content type
 
 
 class ImageArtifactView():
@@ -8,10 +11,28 @@ class ImageArtifactView():
     image_artifact_view = ViewPageTemplateFile('image_artifact.pt')
 
     def __call__(self):
-        import pdb ; pdb.set_trace()
+        """
+        """
+
+        storage = None
+
+        if self.request.method == 'POST':
+            annotation = createContentInContainer(self.context, 'annotation')
+            for uid, question in self.request.form.items():
+                response = createContentInContainer(annotation, 'response')
+                storage = IStorage(response)
+                storage[uid] = question
+
+        if storage:                
+            print storage
+
+
         return self.image_artifact_view()
 
     def get_questions(self):
-        return self.context.portal_catalog(portal_type="question",
+        """
+        """
+        results = self.context.portal_catalog(portal_type="question",
             sort_on="id",
             sort_order="ascending")
+        return results
