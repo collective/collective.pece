@@ -34,13 +34,13 @@
             </div>
         </form>
         </div>
-
-        <hr />
-
-        <h4>Annotations:</h4>
-        <ul tal:repeat="annotation view/context/objectValues">
-            <li><a tal:attributes="href annotation/absolute_url" tal:content="annotation/getId"></a></li>
-        </ul>
+        <div tal:condition="view/context/objectValues">
+            <hr />
+            <h4>Annotations:</h4>
+            <ul tal:repeat="annotation view/context/objectValues">
+                <li><a tal:attributes="href annotation/absolute_url" tal:content="annotation/getId"></a></li>
+            </ul>
+        </div>
     </div>
 </div>
 </div>
