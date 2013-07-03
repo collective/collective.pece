@@ -24,6 +24,5 @@ class ImageArtifactView():
     def get_questions(self):
         """
         """
-        results = self.context.portal_catalog(
+        return self.context.portal_catalog(
             portal_type="question", sort_on="id", sort_order="ascending")
-        return results
