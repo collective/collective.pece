@@ -13,7 +13,6 @@ class ImageArtifactView():
     def __call__(self):
         """
         """
-        storage = None
         if self.request.method == 'POST':
             annotation = createContentInContainer(self.context, 'annotation')
             for uid, question in self.request.form.items():
