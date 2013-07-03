@@ -8,6 +8,7 @@ class ImageArtifactView():
     image_artifact_view = ViewPageTemplateFile('image_artifact.pt')
 
     def __call__(self):
+        import pdb ; pdb.set_trace()
         return self.image_artifact_view()
 
     def get_questions(self):

@@ -12,6 +12,7 @@ setup(
     install_requires=[
         'setuptools',
         'five.grok',
+        'plone.app.referenceablebehavior',
         'z3c.jbot',
     ],
 )
