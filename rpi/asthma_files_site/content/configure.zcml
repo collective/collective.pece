@@ -8,4 +8,11 @@
         class=".image_artifact.ImageArtifactView"
         />
 
+    <browser:page
+        for="*"
+        name="annotation-view"
+        permission="zope2.Public"
+        class=".annotation_view.AnnotationView"
+        />
+
 </configure>
