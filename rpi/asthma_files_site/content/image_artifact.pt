@@ -28,6 +28,7 @@
                 </div>
             </div>
             <div class="modal-footer">
+                <input class="btn" type="submit" name="new-question" value="Add another question?">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
                 <button class="btn btn-primary">Submit</button>
             </div>

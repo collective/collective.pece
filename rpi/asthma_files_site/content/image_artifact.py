@@ -15,8 +15,15 @@ class ImageArtifactView():
         """
         """
         if self.request.method == 'POST':
+            questions = []
+            items = self.request.form.items()
+            for item, text in items:
+                if item != 'new-question':  
+                    questions.append((item, text))
+                else:  # Add another question
+                    new_question = True
             annotation = createContentInContainer(self.context, 'annotation')
-            for uid, text in self.request.form.items():
+            for uid, text in questions:
                 if text is not '':
                     question = uuidToObject(uid)
                     question = question.Title()
@@ -26,6 +33,10 @@ class ImageArtifactView():
                     storage = IStorage(response)
                     storage[uid] = question
                     response.description = text
+
+            if new_question:
+                portal = self.context.portal_url()
+                self.request.response.redirect("%s/++add++question" % portal)
         return self.image_artifact_view()
 
     def get_questions(self):
