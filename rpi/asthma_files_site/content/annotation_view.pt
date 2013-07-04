@@ -1,0 +1,14 @@
+<div metal:use-macro="here/main_template/macros/master">
+<div metal:fill-slot="main">
+    <ul tal:repeat="question view/get_questions" tal:condition="python: False">
+        <!-- Don't need to dispay this list anymore ^ but we'll leave it here just in case. -->
+        <li><a tal:attributes="href question/getURL" tal:content="question/Title"></a></li>
+    </ul>
+    <div style="margin-left: 2em" tal:repeat="response view/context/objectValues">
+        <div class="row">
+            <h1 tal:content="response/Title"></h1>
+            <p tal:content="response/description"></p>
+        </div>
+    </div>
+</div>
+</div>
