@@ -16,10 +16,12 @@ class ImageArtifactView():
         if self.request.method == 'POST':
             annotation = createContentInContainer(self.context, 'annotation')
             for uid, question in self.request.form.items():
-                response = createContentInContainer(
-                    annotation, 'response', title="Response to: %s" % question)
-                storage = IStorage(response)
-                storage[uid] = question
+                if question is not '':
+                    response = createContentInContainer(
+                        annotation, 'response', title="Response to: %s" % question)
+                    storage = IStorage(response)
+                    storage[uid] = question
+                    response.description = question
         return self.image_artifact_view()
 
     def get_questions(self):

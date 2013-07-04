@@ -23,9 +23,8 @@
             <div class="modal-body">
                 <p class="lead">Respond to questions:</p>
                 <div tal:repeat="question view/get_questions">
-                    <label class="checkbox">
-                        <input type="checkbox" tal:attributes="name question/UID;value question/Title"><span tal:content="question/Title"></span>
-                    </label>
+                    <span tal:content="question/Title"></span>
+                    <textarea tal:attributes="name question/UID" rows="3"></textarea>
                 </div>
             </div>
             <div class="modal-footer">
