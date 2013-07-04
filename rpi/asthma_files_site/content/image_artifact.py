@@ -17,7 +17,7 @@ class ImageArtifactView():
         if self.request.method == 'POST':
             annotation = createContentInContainer(self.context, 'annotation')
             for uid, text in self.request.form.items():
-                if response is not '':
+                if text is not '':
                     question = uuidToObject(uid)
                     question = question.Title()
                     title = "Response to %s"
