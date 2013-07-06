@@ -5,6 +5,16 @@ from zope.annotation.interfaces import IAnnotations as IStorage  # Avoid
                                 # confusion with annotation content type
 
 
+class ImageArtifactEditTags():
+    """
+    """
+
+    def __call__(self):
+        """
+        """
+        return self.request.response.redirect(self.context.absolute_url())
+
+
 class ImageArtifactView():
     """
     """
@@ -34,7 +44,6 @@ class ImageArtifactView():
                     storage = IStorage(response)
                     storage[uid] = question
                     response.description = text
-
             if new_question:
                 portal = self.context.portal_url()
                 self.request.response.redirect("%s/++add++question" % portal)

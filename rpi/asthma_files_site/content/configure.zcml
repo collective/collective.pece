@@ -10,6 +10,13 @@
 
     <browser:page
         for="*"
+        name="image-artifact-edit-tags"
+        permission="zope2.Public"
+        class=".image_artifact.ImageArtifactEditTags"
+        />
+
+    <browser:page
+        for="*"
         name="annotation-view"
         permission="zope2.Public"
         class=".annotation_view.AnnotationView"
