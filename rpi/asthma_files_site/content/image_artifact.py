@@ -14,6 +14,7 @@ class ImageArtifactView():
     def __call__(self):
         """
         """
+        new_question = False
         if self.request.method == 'POST':
             questions = []
             items = self.request.form.items()
