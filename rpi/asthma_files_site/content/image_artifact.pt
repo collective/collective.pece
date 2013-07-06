@@ -8,27 +8,27 @@
         <br />
         <br />
         <!-- Button to trigger modal -->
-        <a href="#myModal" role="button" class="btn btn-large" data-toggle="modal">Add Annotation</a>
+        <a href="#addAnnotation" role="button" class="btn btn-large" data-toggle="modal">Add Annotation</a>
         <!-- Modal -->
-        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Add Annotation</h3>
-        </div>
-        <form tal:attributes="action view/context/absolute_url" method="POST">
-            <div class="modal-body">
-                <p class="lead">Respond to questions:</p>
-                <div tal:repeat="question view/get_questions">
-                    <span tal:content="question/Title"></span>
-                    <textarea tal:attributes="name question/UID" rows="3"></textarea>
+        <div id="addAnnotation" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="addAnnotationLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="addAnnotationLabel">Add Annotation</h3>
+            </div>
+            <form tal:attributes="action view/context/absolute_url" method="POST">
+                <div class="modal-body">
+                    <p class="lead">Respond to questions:</p>
+                    <div tal:repeat="question view/get_questions">
+                        <span tal:content="question/Title"></span>
+                        <textarea tal:attributes="name question/UID" rows="3"></textarea>
+                    </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <input class="btn" type="submit" name="new-question" value="Add another question?">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                <button class="btn btn-primary">Submit</button>
-            </div>
-        </form>
+                <div class="modal-footer">
+                    <input class="btn" type="submit" name="new-question" value="Add another question?">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
         <div tal:condition="view/context/objectValues">
             <hr />
