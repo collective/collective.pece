@@ -44,7 +44,7 @@
                 </div>
                 <form tal:attributes="action python: view.context.absolute_url() + '/@@image-artifact-edit-tags'" method="POST">
                     <div class="modal-body">
-                        <textarea tal:content="view/get_tags"></textarea>
+                        <textarea rows="5" name="tags" tal:content="view/get_tags"></textarea>
                     </div>
                     <div class="modal-footer">
                         <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>

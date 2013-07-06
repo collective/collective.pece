@@ -11,7 +11,10 @@ class ImageArtifactEditTags():
 
     def __call__(self):
         """
+        Set tags
         """
+        tags = self.request.form.get('tags').split('\r\n')
+        self.context.setSubject(tags)
         return self.request.response.redirect(self.context.absolute_url())
 
 
