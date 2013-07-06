@@ -49,6 +49,6 @@ class ImageArtifactView():
 
     def get_tags(self):
         """
-        Return tags as string with newlines
+        Return tags as string separated by newline
         """
         return '\n'.join(self.context.Subject())
