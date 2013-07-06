@@ -42,9 +42,13 @@ class ImageArtifactView():
 
     def get_questions(self):
         """
+        Return content items of type "question" from the catalog
         """
         return self.context.portal_catalog(
             portal_type="question", sort_on="id", sort_order="ascending")
 
     def get_tags(self):
+        """
+        Return tags as string with newlines
+        """
         return '\n'.join(self.context.Subject())
