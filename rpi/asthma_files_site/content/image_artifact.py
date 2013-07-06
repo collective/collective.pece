@@ -7,11 +7,12 @@ from zope.annotation.interfaces import IAnnotations as IStorage  # Avoid
 
 class ImageArtifactEditTags():
     """
+    Browser view class
     """
 
     def __call__(self):
         """
-        Set tags
+        Set tags ; redirect to context
         """
         tags = self.request.form.get('tags').split('\r\n')
         self.context.setSubject(tags)
@@ -21,12 +22,14 @@ class ImageArtifactEditTags():
 
 class ImageArtifactView():
     """
+    Browser view class
     """
 
     image_artifact_view = ViewPageTemplateFile('image_artifact.pt')
 
     def __call__(self):
         """
+        Return the view template ; handle form posts
         """
         new_question = False
         if self.request.method == 'POST':
@@ -62,6 +65,6 @@ class ImageArtifactView():
 
     def get_tags(self):
         """
-        Return tags as string separated by newline
+        Return tags as a string separated by newlines
         """
         return '\n'.join(self.context.Subject())
