@@ -46,6 +46,10 @@
                     <div class="modal-body">
                         <textarea tal:content="view/get_tags"></textarea>
                     </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
                 </form>
             </div>
             <div tal:condition="view/context/objectValues">
