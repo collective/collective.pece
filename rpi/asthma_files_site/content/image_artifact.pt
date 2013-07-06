@@ -1,56 +1,55 @@
 <div metal:use-macro="here/main_template/macros/master">
-<div metal:fill-slot="main">
-    <div style="text-align: center">
-
-        <h1 tal:content="view/context/Title"></h1>
-        <br />
-        <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image/thumb" tal:replace="structure view/context/@@images/image/thumb" /></a>
-        <br />
-        <br />
-        <!-- Button to trigger modal -->
-        <a href="#addAnnotation" role="button" class="btn btn-large" data-toggle="modal">Add Annotation</a>
-        <a href="#editMetadata" role="button" class="btn btn-large" data-toggle="modal">Edit Metadata</a>
-        <a href="#editTags" role="button" class="btn btn-large" data-toggle="modal">Edit Tags</a>
-        <!-- Modal -->
-        <div id="addAnnotation" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="addAnnotationLabel" aria-hidden="true">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="addAnnotationLabel">Add Annotation</h3>
-            </div>
-            <form tal:attributes="action view/context/absolute_url" method="POST">
-                <div class="modal-body">
-                    <p class="lead">Respond to questions:</p>
-                    <div tal:repeat="question view/get_questions">
-                        <span tal:content="question/Title"></span>
-                        <textarea tal:attributes="name question/UID" rows="3"></textarea>
+    <div metal:fill-slot="main">
+        <div style="text-align: center">
+            <h1 tal:content="view/context/Title"></h1>
+            <br />
+            <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image/thumb" tal:replace="structure view/context/@@images/image/thumb" /></a>
+            <br />
+            <br />
+            <!-- Button to trigger modal -->
+            <a href="#addAnnotation" role="button" class="btn btn-large" data-toggle="modal">Add Annotation</a>
+            <a href="#editMetadata" role="button" class="btn btn-large" data-toggle="modal">Edit Metadata</a>
+            <a href="#editTags" role="button" class="btn btn-large" data-toggle="modal">Edit Tags</a>
+            <!-- Modal -->
+            <div id="addAnnotation" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="addAnnotationLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="addAnnotationLabel">Add Annotation</h3>
+                </div>
+                <form tal:attributes="action view/context/absolute_url" method="POST">
+                    <div class="modal-body">
+                        <p class="lead">Respond to questions:</p>
+                        <div tal:repeat="question view/get_questions">
+                            <span tal:content="question/Title"></span>
+                            <textarea tal:attributes="name question/UID" rows="3"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <input class="btn" type="submit" name="new-question" value="Add another question?">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                    <button class="btn btn-primary">Submit</button>
-                </div>
-            </form>
-        </div>
-        <div id="editMetadata" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editMetadataLabel" aria-hidden="true">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="editMetadataLabel">Edit Metadata</h3>
+                    <div class="modal-footer">
+                        <input class="btn" type="submit" name="new-question" value="Add another question?">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
             </div>
-        </div>
-        <div id="editTags" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editTagsLabel" aria-hidden="true">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="editTagsLabel">Edit Tags</h3>
+            <div id="editMetadata" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editMetadataLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="editMetadataLabel">Edit Metadata</h3>
+                </div>
             </div>
-        </div>
-        <div tal:condition="view/context/objectValues">
-            <hr />
-            <h4>Annotations:</h4>
-            <ul tal:repeat="annotation view/context/objectValues">
-                <li><a tal:attributes="href annotation/absolute_url" tal:content="annotation/getId"></a></li>
-            </ul>
+            <div id="editTags" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editTagsLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="editTagsLabel">Edit Tags</h3>
+                </div>
+            </div>
+            <div tal:condition="view/context/objectValues">
+                <hr />
+                <h4>Annotations:</h4>
+                <ul tal:repeat="annotation view/context/objectValues">
+                    <li><a tal:attributes="href annotation/absolute_url" tal:content="annotation/getId"></a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 </div>
