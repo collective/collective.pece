@@ -45,3 +45,6 @@ class ImageArtifactView():
         """
         return self.context.portal_catalog(
             portal_type="question", sort_on="id", sort_order="ascending")
+
+    def get_tags(self):
+        return '\n'.join(self.context.Subject())

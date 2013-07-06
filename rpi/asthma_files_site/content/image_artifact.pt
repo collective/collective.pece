@@ -42,6 +42,11 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="editTagsLabel">Edit Tags</h3>
                 </div>
+                <form tal:attributes="action view/context/absolute_url" method="POST">
+                    <div class="modal-body">
+                        <textarea tal:content="view/get_tags"></textarea>
+                    </div>
+                </form>
             </div>
             <div tal:condition="view/context/objectValues">
                 <hr />
