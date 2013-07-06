@@ -15,6 +15,7 @@ class ImageArtifactEditTags():
         """
         tags = self.request.form.get('tags').split('\r\n')
         self.context.setSubject(tags)
+        self.context.reindexObject()
         return self.request.response.redirect(self.context.absolute_url())
 
 
