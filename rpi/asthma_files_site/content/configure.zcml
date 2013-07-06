@@ -19,7 +19,7 @@
         for="*"
         name="annotation-view"
         permission="zope2.Public"
-        class=".annotation_view.AnnotationView"
+        template="annotation_view.pt"
         />
 
 </configure>
