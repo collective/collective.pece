@@ -14,7 +14,6 @@
         />
 
     <grok:grok package="." />
-
     <gs:registerProfile
         name="default"
         description="Install 'Asthma Files Site' functionality"
