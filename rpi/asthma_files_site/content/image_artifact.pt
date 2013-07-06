@@ -9,6 +9,8 @@
         <br />
         <!-- Button to trigger modal -->
         <a href="#addAnnotation" role="button" class="btn btn-large" data-toggle="modal">Add Annotation</a>
+        <a href="#editMetadata" role="button" class="btn btn-large" data-toggle="modal">Edit Metadata</a>
+        <a href="#editTags" role="button" class="btn btn-large" data-toggle="modal">Edit Tags</a>
         <!-- Modal -->
         <div id="addAnnotation" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="addAnnotationLabel" aria-hidden="true">
             <div class="modal-header">
@@ -29,6 +31,18 @@
                     <button class="btn btn-primary">Submit</button>
                 </div>
             </form>
+        </div>
+        <div id="editMetadata" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editMetadataLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="editMetadataLabel">Edit Metadata</h3>
+            </div>
+        </div>
+        <div id="editTags" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editTagsLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="editTagsLabel">Edit Tags</h3>
+            </div>
         </div>
         <div tal:condition="view/context/objectValues">
             <hr />
