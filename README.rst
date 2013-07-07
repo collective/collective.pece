@@ -27,7 +27,17 @@ Edit tags
 Implementation
 ++++++++++++++
 
-Plone OOB UT to edit tags is cumbersome so we add a Bootstrap modal to do this.
+Plone OOB UI to edit tags is cumbersome so we add a Bootstrap modal to do this.
 
+#3
+~~
 
+User story
+++++++++++
 
+Edit metadata
+
+Implementation
+++++++++++++++
+
+Plone OOB UI to edit metadata is cumbersome so we add a Bootstrap modal to do this.
