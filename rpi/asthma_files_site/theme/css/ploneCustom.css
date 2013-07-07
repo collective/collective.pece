@@ -203,3 +203,8 @@ a.managePortletsFallback {
     font-size: 75%;
     background: #fffeee;
 }
+
+
+#formfield-form-widgets-coverage {
+    display: none;
+}
