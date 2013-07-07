@@ -50,6 +50,11 @@
 
                         <label>Description</label>
                         <textarea rows="5" name="description" tal:content="view/context/description"></textarea>
+
+                        <label>Format</label>
+                        <input class="uneditable-input" tal:attributes="value view/context/format">
+
+
                     </div>
 
 

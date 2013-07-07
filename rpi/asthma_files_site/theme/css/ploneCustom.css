@@ -204,7 +204,9 @@ a.managePortletsFallback {
     background: #fffeee;
 }
 
+/* Hide edit form fields to display in modal only */
 
-#formfield-form-widgets-coverage {
+#formfield-form-widgets-coverage,
+#formfield-form-widgets-format {
     display: none;
 }
