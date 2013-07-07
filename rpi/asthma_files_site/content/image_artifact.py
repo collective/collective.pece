@@ -7,7 +7,7 @@ from zope.annotation.interfaces import IAnnotations as IStorage  # Avoid
 
 class ImageArtifactEditTags():
     """
-    Browser view
+    Browser page
     """
 
     def __call__(self):
@@ -22,7 +22,7 @@ class ImageArtifactEditTags():
 
 class ImageArtifactView():
     """
-    Browser view
+    Browser page
     """
 
     image_artifact_view = ViewPageTemplateFile('image_artifact.pt')
