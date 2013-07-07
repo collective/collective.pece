@@ -14,4 +14,4 @@ We want to be able to change the tags without losing the integrity of the file s
 Plone implementation
 ++++++++++++++++++++
 
-This should work with Plone OOB with the addition of the Artifact types e.g. Image Artifact. Please test on http://localhost:8080/taf and report any issues with the above.
+This should work with Plone OOB with the addition of the Artifact types e.g. Image Artifact.
