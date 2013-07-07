@@ -36,7 +36,7 @@ class ImageArtifactView():
             questions = []
             items = self.request.form.items()
             for item, text in items:
-                if item != 'new-question':  
+                if item != 'new-question':
                     questions.append((item, text))
                 else:  # Add another question
                     new_question = True
