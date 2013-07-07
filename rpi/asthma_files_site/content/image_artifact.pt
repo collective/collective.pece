@@ -42,7 +42,6 @@
                         <label>Contributor</label>
                         <textarea rows="5" name="contributor" tal:content="view/get_contributors"></textarea>
 
-                    <div class="modal-body">
                         <label>Description</label>
                         <textarea rows="5" name="description" tal:content="view/context/description"></textarea>
                     </div>
