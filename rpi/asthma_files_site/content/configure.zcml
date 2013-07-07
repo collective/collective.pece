@@ -19,6 +19,13 @@
 
     <browser:page
         for="*"
+        name="image-artifact-edit-metadata"
+        permission="zope2.Public"
+        class=".image_artifact.ImageArtifactEditMetadata"
+        />
+
+    <browser:page
+        for="*"
         name="image-artifact-edit-tags"
         permission="zope2.Public"
         class=".image_artifact.ImageArtifactEditTags"

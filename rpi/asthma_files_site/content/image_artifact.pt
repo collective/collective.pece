@@ -36,6 +36,15 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="editMetadataLabel">Edit Metadata</h3>
                 </div>
+                <form tal:attributes="action python: view.context.absolute_url() + '/@@image-artifact-edit-metadata'" method="POST">
+                    <div class="modal-body">
+                        <textarea rows="5" name="description" tal:content="view/context/description"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
             </div>
             <div id="editTags" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editTagsLabel" aria-hidden="true">
                 <div class="modal-header">

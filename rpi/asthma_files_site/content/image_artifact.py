@@ -5,6 +5,21 @@ from zope.annotation.interfaces import IAnnotations as IStorage  # Avoid
                                 # confusion with annotation content type
 
 
+class ImageArtifactEditMetadata():
+    """
+    Browser page
+    """
+
+    def __call__(self):
+        """
+        Set metadata; redirect to context
+        """
+        description = self.request.form.get('description')
+        self.context.description = description
+        self.context.reindexObject()
+        return self.request.response.redirect(self.context.absolute_url())
+
+
 class ImageArtifactEditTags():
     """
     Browser page
