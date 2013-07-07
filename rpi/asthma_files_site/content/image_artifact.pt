@@ -40,10 +40,13 @@
 
                     <div class="modal-body">
                         <label>Contributor</label>
-                        <textarea rows="5" name="contributor" tal:content="view/get_contributors"></textarea>
+                        <textarea rows="5" name="contributor" tal:content="view/get_contributor"></textarea>
 
                         <label>Coverage</label>
                         <textarea rows="5" name="coverage" tal:content="view/context/coverage"></textarea>
+
+                        <label>Creator</label>
+                        <textarea rows="5" name="creator" tal:content="view/get_creator"></textarea>
 
                         <label>Description</label>
                         <textarea rows="5" name="description" tal:content="view/context/description"></textarea>

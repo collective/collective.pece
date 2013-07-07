@@ -20,6 +20,9 @@ class ImageArtifactEditMetadata():
         coverage = self.request.form.get('coverage')
         self.context.coverage = coverage
 
+        creator = self.request.form.get('creator').split('\r\n')
+        self.context.creators = creator
+
         description = self.request.form.get('description')
         self.context.description = description
 
@@ -85,11 +88,17 @@ class ImageArtifactView():
         return self.context.portal_catalog(
             portal_type="question", sort_on="id", sort_order="ascending")
 
-    def get_contributors(self):
+    def get_contributor(self):
         """
-        Return contributors as a string separated by newlines
+        Return contributor field as a string separated by newlines
         """
         return '\n'.join(self.context.Contributors())
+
+    def get_creator(self):
+        """
+        Return creator field as a string separated by newlines
+        """
+        return '\n'.join(self.context.creators)
 
     def get_tags(self):
         """
