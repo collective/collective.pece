@@ -34,7 +34,7 @@ class ImageArtifactView():
         new_question = False
         if self.request.method == 'POST':
             questions = []
-            items = self.request.form.items()
+            items = self.request.form.items()  # XXX Why not use .get()?
             for item, text in items:
                 if item != 'new-question':
                     questions.append((item, text))
