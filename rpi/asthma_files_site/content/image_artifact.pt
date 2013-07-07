@@ -73,9 +73,13 @@
             <div tal:condition="view/context/objectValues">
                 <hr />
                 <h4>Annotations:</h4>
-                <ul tal:repeat="annotation view/context/objectValues">
-                    <li><a tal:attributes="href annotation/absolute_url" tal:content="annotation/getId"></a></li>
-                </ul>
+                <!-- http://stackoverflow.com/questions/7562095/redirect-on-select-option-in-select-box -->
+                <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                    <option value="">Select…</option>
+                    <tal:repeat tal:repeat="annotation view/context/objectValues">
+                        <option><a tal:attributes="value annotation/absolute_url" tal:content="annotation/getId"></a></option>
+                    </tal:repeat>
+                </select>
             </div>
         </div>
     </div>
