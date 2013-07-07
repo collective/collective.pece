@@ -28,11 +28,17 @@
  </property>
  <property name="schema"></property>
  <property
-    name="model_source">&lt;model xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
+    name="model_source">&lt;model xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http
+://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
     &lt;schema&gt;
       &lt;field name="image" type="plone.namedfile.field.NamedBlobImage"&gt;
         &lt;description/&gt;
         &lt;title&gt;Image&lt;/title&gt;
+      &lt;/field&gt;
+      &lt;field name="coverage" type="zope.schema.TextLine"&gt;
+        &lt;description/&gt;
+        &lt;required&gt;False&lt;/required&gt;
+        &lt;title&gt;Coverage&lt;/title&gt;
       &lt;/field&gt;
     &lt;/schema&gt;
   &lt;/model&gt;</property>
