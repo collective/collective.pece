@@ -42,6 +42,9 @@
                         <label>Contributor</label>
                         <textarea rows="5" name="contributor" tal:content="view/get_contributors"></textarea>
 
+                        <label>Coverage</label>
+                        <textarea rows="5" name="coverage" tal:content="view/context/coverage"></textarea>
+
                         <label>Description</label>
                         <textarea rows="5" name="description" tal:content="view/context/description"></textarea>
                     </div>

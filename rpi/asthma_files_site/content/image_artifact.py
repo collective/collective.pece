@@ -17,6 +17,9 @@ class ImageArtifactEditMetadata():
         contributor = self.request.form.get('contributor').split('\r\n')
         self.context.contributors = contributor
 
+        coverage = self.request.form.get('coverage')
+        self.context.coverage = coverage
+
         description = self.request.form.get('description')
         self.context.description = description
 
