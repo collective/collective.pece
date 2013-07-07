@@ -12,7 +12,7 @@ class ImageArtifactEditTags():
 
     def __call__(self):
         """
-        Set tags ; redirect to context
+        Set tags; redirect to context
         """
         tags = self.request.form.get('tags').split('\r\n')
         self.context.setSubject(tags)
@@ -29,7 +29,7 @@ class ImageArtifactView():
 
     def __call__(self):
         """
-        Return the view template ; handle form posts
+        Return the view template; handle form posts
         """
         new_question = False
         if self.request.method == 'POST':
