@@ -14,8 +14,12 @@ class ImageArtifactEditMetadata():
         """
         Set metadata; redirect to context
         """
+        contributor = self.request.form.get('contributor').split('\r\n')
+        self.context.contributors = contributor
+
         description = self.request.form.get('description')
         self.context.description = description
+
         self.context.reindexObject()
         return self.request.response.redirect(self.context.absolute_url())
 
@@ -77,6 +81,12 @@ class ImageArtifactView():
         """
         return self.context.portal_catalog(
             portal_type="question", sort_on="id", sort_order="ascending")
+
+    def get_contributors(self):
+        """
+        Return contributors as a string separated by newlines
+        """
+        return '\n'.join(self.context.Contributors())
 
     def get_tags(self):
         """

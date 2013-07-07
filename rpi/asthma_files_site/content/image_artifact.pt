@@ -37,9 +37,17 @@
                     <h3 id="editMetadataLabel">Edit Metadata</h3>
                 </div>
                 <form tal:attributes="action python: view.context.absolute_url() + '/@@image-artifact-edit-metadata'" method="POST">
+
                     <div class="modal-body">
+                        <label>Contributor</label>
+                        <textarea rows="5" name="contributor" tal:content="view/get_contributors"></textarea>
+
+                    <div class="modal-body">
+                        <label>Description</label>
                         <textarea rows="5" name="description" tal:content="view/context/description"></textarea>
                     </div>
+
+
                     <div class="modal-footer">
                         <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
                         <button class="btn btn-primary">Submit</button>
@@ -53,6 +61,7 @@
                 </div>
                 <form tal:attributes="action python: view.context.absolute_url() + '/@@image-artifact-edit-tags'" method="POST">
                     <div class="modal-body">
+
                         <textarea rows="5" name="tags" tal:content="view/get_tags"></textarea>
                     </div>
                     <div class="modal-footer">
