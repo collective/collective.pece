@@ -40,4 +40,20 @@ Edit metadata
 Implementation
 ++++++++++++++
 
-Plone OOB UI to edit metadata is cumbersome so we add a Bootstrap modal to do this.
+Plone OOB UI to edit metadata is cumbersome so we add a Bootstrap modal to do this. Support DC metadata (http://dublincore.org/documents/dces/):
+
+- contributor
+- coverage
+- creator
+- date
+- description
+- format
+- identifier
+- language
+- publisher
+- relation
+- rights
+- source
+- subject
+- title
+- type
