@@ -1,6 +1,12 @@
 <configure
     xmlns:browser="http://namespaces.zope.org/browser">
 
+    <!-- Todo: Fix permissions and context 
+            for="*"
+            permission="zope2.Public"
+        too permissive.
+        -->
+
     <browser:page
         for="*"
         name="image-artifact-view"
