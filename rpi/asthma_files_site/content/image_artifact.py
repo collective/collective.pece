@@ -35,13 +35,13 @@ class ImageArtifactView():
         if self.request.method == 'POST':
             questions = []
             items = self.request.form.items()  # XXX Why not use .get()?
-            for item, text in items:
-                if item != 'new-question':
+            for item, text in items:  # Add another question?
+                if item != 'new-question':  # No
                     questions.append((item, text))
-                else:  # Add another question
+                else:  # Yes
                     add_another_question = True
             annotation = createContentInContainer(self.context, 'annotation')
-            for uid, text in questions:
+            for uid, text in questions:  # Process questions
                 if text is not '':
                     question = uuidToObject(uid)
                     question = question.Title()
