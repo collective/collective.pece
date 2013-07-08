@@ -55,13 +55,13 @@
                         <span class="uneditable-input" tal:content="view/context/format"></span>
 
                         <label>Identifier</label>
-                        <input type="text" name="identifier" tal:attributes="value view/context/identifier">
+                        <input class="input-xlarge" type="text" name="identifier" tal:attributes="value view/context/identifier">
 
                         <label>Language</label>
                         <span class="uneditable-input" name="identifier" tal:content="view/context/language"></span>
 
                         <label>Publisher</label>
-                        <input type="text" name="publisher" tal:attributes="value view/context/publisher">
+                        <input class="input-xlarge" type="text" name="publisher" tal:attributes="value view/context/publisher">
                     </div>
 
                     <div class="modal-footer">
