@@ -41,6 +41,9 @@ class ImageArtifactEditMetadata():
         source = self.request.form.get('source')
         self.context.source = source
 
+        subject = self.request.form.get('subject')
+        self.context.subject = subject
+
         self.context.reindexObject()
 
         return self.request.response.redirect(self.context.absolute_url())

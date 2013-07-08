@@ -71,6 +71,9 @@
 
                         <label>Source</label>
                         <input class="input-xlarge" type="text" name="source" tal:attributes="value view/context/source">
+
+                        <label>Subject</label>
+                        <input class="input-xlarge" type="text" name="subject" tal:attributes="value view/context/subject">
                     </div>
 
                     <div class="modal-footer">

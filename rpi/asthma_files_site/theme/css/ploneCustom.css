@@ -213,7 +213,8 @@ a.managePortletsFallback {
 #formfield-form-widgets-publisher,
 #formfield-form-widgets-relation,
 #formfield-form-widgets-rights,
-#formfield-form-widgets-source
+#formfield-form-widgets-source,
+#formfield-form-widgets-subject
 {
     display: none;
 }
