@@ -45,6 +45,16 @@
         &lt;required&gt;False&lt;/required&gt;
         &lt;title&gt;Format&lt;/title&gt;
       &lt;/field&gt;
+      &lt;field name="identifier" type="zope.schema.TextLine"&gt;
+        &lt;description/&gt;
+        &lt;required&gt;False&lt;/required&gt;
+        &lt;title&gt;Identifier&lt;/title&gt;
+      &lt;/field&gt;
+      &lt;field name="language" type="zope.schema.TextLine"&gt;
+        &lt;description/&gt;
+        &lt;required&gt;False&lt;/required&gt;
+        &lt;title&gt;Language&lt;/title&gt;
+      &lt;/field&gt;
     &lt;/schema&gt;
   &lt;/model&gt;</property>
  <property name="model_file"></property>

@@ -52,11 +52,14 @@
                         <textarea rows="5" name="description" tal:content="view/context/description"></textarea>
 
                         <label>Format</label>
-                        <input class="uneditable-input" tal:attributes="value view/context/format">
+                        <span class="uneditable-input" tal:content="view/context/format"></span>
 
+                        <label>Identifier</label>
+                        <input type="text" name="identifier" tal:attributes="value view/context/identifier">
 
+                        <label>Language</label>
+                        <span class="uneditable-input" name="identifier" tal:content="view/context/language"></span>
                     </div>
-
 
                     <div class="modal-footer">
                         <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
