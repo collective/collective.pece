@@ -60,6 +60,11 @@
         &lt;required&gt;False&lt;/required&gt;
         &lt;title&gt;Publisher&lt;/title&gt;
       &lt;/field&gt;
+      &lt;field name="relation" type="zope.schema.TextLine"&gt;
+        &lt;description/&gt;
+        &lt;required&gt;False&lt;/required&gt;
+        &lt;title&gt;Relation&lt;/title&gt;
+      &lt;/field&gt;
     &lt;/schema&gt;
   &lt;/model&gt;</property>
  <property name="model_file"></property>
