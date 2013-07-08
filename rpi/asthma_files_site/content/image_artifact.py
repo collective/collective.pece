@@ -47,6 +47,9 @@ class ImageArtifactEditMetadata():
 #        title = self.request.form.get('title')
 #        self.context.title = title
 
+        dublin_core_type = self.request.form.get('dublin_core_type')
+        self.context.dublin_core_type = dublin_core_type
+
         self.context.reindexObject()
 
         return self.request.response.redirect(self.context.absolute_url())

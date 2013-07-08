@@ -77,6 +77,9 @@
 
                         <label>Title</label>
                         <span class="input-xlarge uneditable-input" tal:content="view/context/title"></span>
+
+                        <label>Type</label>
+                        <input class="input-xlarge" type="text" name="dublin_core_type" tal:attributes="value view/context/dublin_core_type">
                     </div>
 
                     <div class="modal-footer">
