@@ -62,6 +62,9 @@
 
                         <label>Publisher</label>
                         <input class="input-xlarge" type="text" name="publisher" tal:attributes="value view/context/publisher">
+
+                        <label>Relation</label>
+                        <input class="input-xlarge" type="text" name="relation" tal:attributes="value view/context/relation">
                     </div>
 
                     <div class="modal-footer">
