@@ -74,6 +74,9 @@
 
                         <label>Subject</label>
                         <span class="uneditable-input" tal:content="view/get_tags"></span>
+
+                        <label>Title</label>
+                        <span class="input-xlarge uneditable-input" tal:content="view/context/title"></span>
                     </div>
 
                     <div class="modal-footer">
