@@ -209,7 +209,8 @@ a.managePortletsFallback {
 #formfield-form-widgets-coverage,
 #formfield-form-widgets-format,
 #formfield-form-widgets-identifier,
-#formfield-form-widgets-language
+#formfield-form-widgets-language,
+#formfield-form-widgets-publisher
 {
     display: none;
 }

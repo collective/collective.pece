@@ -29,6 +29,9 @@ class ImageArtifactEditMetadata():
         identifier = self.request.form.get('identifier')
         self.context.identifier = identifier
 
+        publisher = self.request.form.get('publisher')
+        self.context.publisher = publisher
+
         self.context.reindexObject()
         return self.request.response.redirect(self.context.absolute_url())
 

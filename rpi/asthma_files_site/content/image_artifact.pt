@@ -59,6 +59,9 @@
 
                         <label>Language</label>
                         <span class="uneditable-input" name="identifier" tal:content="view/context/language"></span>
+
+                        <label>Publisher</label>
+                        <input type="text" name="publisher" tal:attributes="value view/context/publisher">
                     </div>
 
                     <div class="modal-footer">
