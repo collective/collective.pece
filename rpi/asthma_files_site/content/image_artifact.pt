@@ -68,6 +68,9 @@
 
                         <label>Rights</label>
                         <input class="input-xlarge" type="text" name="rights" tal:attributes="value view/context/rights">
+
+                        <label>Source</label>
+                        <input class="input-xlarge" type="text" name="source" tal:attributes="value view/context/source">
                     </div>
 
                     <div class="modal-footer">
