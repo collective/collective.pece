@@ -38,6 +38,9 @@ class ImageArtifactEditMetadata():
         rights = self.request.form.get('rights')
         self.context.rights = rights
 
+        source = self.request.form.get('source')
+        self.context.source = source
+
         self.context.reindexObject()
 
         return self.request.response.redirect(self.context.absolute_url())
