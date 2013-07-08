@@ -67,13 +67,13 @@
                         <input class="input-xlarge" type="text" name="relation" tal:attributes="value view/context/relation">
 
                         <label>Rights</label>
-                        <input class="input-xlarge" type="text" name="rights" tal:attributes="value view/context/rights">
+                        <textarea rows="5" name="rights" tal:content="view/context/rights"></textarea>
 
                         <label>Source</label>
                         <input class="input-xlarge" type="text" name="source" tal:attributes="value view/context/source">
 
                         <label>Subject</label>
-                        <input class="input-xlarge" type="text" name="subject" tal:attributes="value view/context/subject">
+                        <span class="uneditable-input" tal:content="view/get_tags"></span>
                     </div>
 
                     <div class="modal-footer">

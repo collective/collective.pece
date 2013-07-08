@@ -41,8 +41,8 @@ class ImageArtifactEditMetadata():
         source = self.request.form.get('source')
         self.context.source = source
 
-        subject = self.request.form.get('subject')
-        self.context.subject = subject
+#        subject = self.request.form.get('subject')
+#        self.context.subject = subject
 
         self.context.reindexObject()
 
