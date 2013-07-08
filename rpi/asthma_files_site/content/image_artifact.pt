@@ -65,6 +65,9 @@
 
                         <label>Relation</label>
                         <input class="input-xlarge" type="text" name="relation" tal:attributes="value view/context/relation">
+
+                        <label>Rights</label>
+                        <input class="input-xlarge" type="text" name="rights" tal:attributes="value view/context/rights">
                     </div>
 
                     <div class="modal-footer">
