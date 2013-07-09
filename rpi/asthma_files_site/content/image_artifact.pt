@@ -52,13 +52,13 @@
                         <textarea rows="5" name="description" tal:content="view/context/description"></textarea>
 
                         <label>Format</label>
-                        <span class="uneditable-input" tal:content="view/context/format"></span>
+                        <span class="input-xlarge uneditable-input" tal:content="view/context/format"></span>
 
                         <label>Identifier</label>
                         <input class="input-xlarge" type="text" name="identifier" tal:attributes="value view/context/identifier">
 
                         <label>Language</label>
-                        <span class="uneditable-input" name="identifier" tal:content="view/context/language"></span>
+                        <span class="input-xlarge uneditable-input" name="identifier" tal:content="view/context/language"></span>
 
                         <label>Publisher</label>
                         <input class="input-xlarge" type="text" name="publisher" tal:attributes="value view/context/publisher">
@@ -73,7 +73,7 @@
                         <input class="input-xlarge" type="text" name="source" tal:attributes="value view/context/source">
 
                         <label>Subject</label>
-                        <span class="uneditable-input" tal:content="view/get_tags"></span>
+                        <span class="input-xlarge uneditable-input" tal:content="view/get_tags"></span>
 
                         <label>Title</label>
                         <span class="input-xlarge uneditable-input" tal:content="view/context/title"></span>
