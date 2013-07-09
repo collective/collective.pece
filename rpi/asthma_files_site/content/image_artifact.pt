@@ -48,6 +48,18 @@
                         <label>Creator</label>
                         <textarea rows="5" name="creator" tal:content="view/get_creator"></textarea>
 
+                        <label>Date</label>
+                        Creation
+                        <span class="input-xlarge uneditable-input" tal:content="view/context/creation_date"></span>
+                        <br />
+                        Publication
+                        <span class="input-xlarge uneditable-input" tal:content="view/context/effective_date"></span>
+                        <a tal:attributes="href python:view.context.absolute_url() + '/edit'">edit</a>
+                        <br />
+                        Expiration
+                        <span class="input-xlarge uneditable-input" tal:content="view/context/expiration_date"></span>
+                        <a tal:attributes="href python:view.context.absolute_url() + '/edit'">edit</a>
+
                         <label>Description</label>
                         <textarea rows="5" name="description" tal:content="view/context/description"></textarea>
 
@@ -77,6 +89,7 @@
 
                         <label>Title</label>
                         <span class="input-xlarge uneditable-input" tal:content="view/context/title"></span>
+                        <a tal:attributes="href python:view.context.absolute_url() + '/edit'">edit</a>
 
                         <label>Type</label>
                         <input class="input-xlarge" type="text" name="dublin_core_type" tal:attributes="value view/context/dublin_core_type">
