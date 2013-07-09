@@ -215,7 +215,7 @@ a.managePortletsFallback {
 #formfield-form-widgets-rights,
 #formfield-form-widgets-source,
 #formfield-form-widgets-subject,
-#formfield-form-widgets-dublin_core_type,
+#formfield-form-widgets-dublin_core_type 
 {
     display: none;
 }
