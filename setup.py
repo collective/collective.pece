@@ -13,6 +13,7 @@ setup(
         'setuptools',
         'five.grok',
         'plone.app.referenceablebehavior',
+        'pyzotero',
         'z3c.jbot',
     ],
 )
