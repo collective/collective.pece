@@ -4,7 +4,7 @@
     xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:plone="http://namespaces.plone.org/plone">
 
-    <include package=".content" />
+    <include package=".browser" />
     <include package=".content" />
     <include package="five.grok" />
     <include package="z3c.jbot" file="meta.zcml" />
