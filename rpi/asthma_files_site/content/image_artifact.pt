@@ -3,7 +3,8 @@
         <div style="text-align: center">
             <h1 tal:content="view/context/Title"></h1>
             <br />
-            <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image/thumb" tal:replace="structure view/context/@@images/image/thumb" /></a>
+            <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image" tal:define="scales context/@@images"
+                tal:replace="structure python: scales.tag('image', css_class='img-polaroid', scale='thumb')" /></a>
             <br />
             <br />
             <!-- Button to trigger modal -->
