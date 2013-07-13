@@ -219,3 +219,7 @@ a.managePortletsFallback {
 {
     display: none;
 }
+
+input {
+    height: 29px !important;
+}
