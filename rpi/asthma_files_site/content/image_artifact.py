@@ -41,12 +41,6 @@ class ImageArtifactEditMetadata():
         source = self.request.form.get('source')
         self.context.source = source
 
-#        subject = self.request.form.get('subject')
-#        self.context.subject = subject
-
-#        title = self.request.form.get('title')
-#        self.context.title = title
-
         dublin_core_type = self.request.form.get('dublin_core_type')  # type
         self.context.dublin_core_type = dublin_core_type  # is a reserved word
 
