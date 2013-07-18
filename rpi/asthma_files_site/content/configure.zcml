@@ -1,5 +1,7 @@
 <configure
-    xmlns:browser="http://namespaces.zope.org/browser">
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    >
 
     <!-- Todo:
         Fix permissions and context:
