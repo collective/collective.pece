@@ -38,4 +38,6 @@
         template="annotation_view.pt"
         />
 
+    <grok:grok package="." />
+
 </configure>

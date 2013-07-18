@@ -1,8 +1,74 @@
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.uuid.utils import uuidToObject
 from plone.dexterity.utils import createContentInContainer
+from plone.directives import form
 from zope.annotation.interfaces import IAnnotations as IStorage  # Avoid
                                 # confusion with annotation content type
+
+
+class IImageArtifact(form.Schema):
+    """
+    """
+
+#    <property
+##    name="model_source">&lt;model xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
+#    &lt;schema&gt;
+#      &lt;field name="image" type="plone.namedfile.field.NamedBlobImage"&gt;
+#        &lt;description/&gt;
+#        &lt;title&gt;Image&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="coverage" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Coverage&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="format" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Format&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="identifier" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Identifier&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="language" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Language&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="publisher" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Publisher&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="relation" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Relation&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="rights" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Rights&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="source" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Source&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="subject" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Subject&lt;/title&gt;
+#      &lt;/field&gt;
+#      &lt;field name="dublin_core_type" type="zope.schema.TextLine"&gt;
+#        &lt;description/&gt;
+#        &lt;required&gt;False&lt;/required&gt;
+#        &lt;title&gt;Type&lt;/title&gt;
+#      &lt;/field&gt;
+#    &lt;/schema&gt;
+#  &lt;/model&gt;</property>
 
 
 class ImageArtifactEditMetadata():
