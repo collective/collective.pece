@@ -2,25 +2,28 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.uuid.utils import uuidToObject
 from plone.dexterity.utils import createContentInContainer
 from plone.directives import form
+from plone.namedfile.field import NamedBlobImage
 from zope.annotation.interfaces import IAnnotations as IStorage  # Avoid
                                 # confusion with annotation content type
+from zope.schema import TextLine
 
 
 class IImageArtifact(form.Schema):
     """
     """
 
-#      &lt;field name="image" type="plone.namedfile.field.NamedBlobImage"&gt;
-#      &lt;field name="coverage" type="zope.schema.TextLine"&gt;
-#      &lt;field name="format" type="zope.schema.TextLine"&gt;
-#      &lt;field name="identifier" type="zope.schema.TextLine"&gt;
-#      &lt;field name="language" type="zope.schema.TextLine"&gt;
-#      &lt;field name="publisher" type="zope.schema.TextLine"&gt;
-#      &lt;field name="relation" type="zope.schema.TextLine"&gt;
-#      &lt;field name="rights" type="zope.schema.TextLine"&gt;
-#      &lt;field name="source" type="zope.schema.TextLine"&gt;
-#      &lt;field name="subject" type="zope.schema.TextLine"&gt;
-#      &lt;field name="dublin_core_type" type="zope.schema.TextLine"&gt;
+    image = NamedBlobImage(title=u"Image")
+    coverage = TextLine(title=u"Coverage", required=False)
+    dublin_core_format = TextLine(title=u"Format", required=False)
+    identifier = TextLine(title=u"Identifier", required=False)
+    language = TextLine(title=u"Language", required=False)
+    publisher = TextLine(title=u"Publisher", required=False)
+    relation = TextLine(title=u"Relation", required=False)
+    rights = TextLine(title=u"Rights", required=False)
+    source = TextLine(title=u"Source", required=False)
+    subject = TextLine(title=u"Subject", required=False)
+    dublin_core_type = TextLine(title=u"Type", required=False)
+
 
 class ImageArtifactEditMetadata():
     """
