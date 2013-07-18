@@ -10,6 +10,7 @@ from zope.schema import TextLine
 
 class IImageArtifact(form.Schema):
     """
+    Content type
     """
 
     image = NamedBlobImage(title=u"Image")
