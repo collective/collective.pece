@@ -1,2 +1,11 @@
-<configure>
+<configure
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <browser:page 
+        class=".zotero_view.ZoteroView"
+        for="*"
+        name="zotero-view"
+        permission="zope2.View"
+        />
+
 </configure>
