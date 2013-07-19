@@ -3,6 +3,7 @@
         <div style="text-align: center">
             <h1 tal:content="view/context/Title"></h1>
             <br />
+            <div class="img-polaroid" tal:condition="python: view.context.portal_type == 'audio_artifact'">Audio Artifact</div>
             <a tal:condition="python: view.context.portal_type == 'image_artifact'" href="view/context/@@images/image_artifact"><img tal:condition="view/context/@@images/image_artifact" tal:define="scales context/@@images" tal:replace="structure python: scales.tag('image_artifact', css_class='img-polaroid', scale='thumb')" /></a>
             <br />
             <br />
