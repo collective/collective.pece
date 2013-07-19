@@ -1,5 +1,11 @@
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from pyzotero import zotero
 from zope.publisher.browser import BrowserPage
+
+
+library_id = os.environ.get('ZOTERO_LIBRARY_ID')
+library_type = os.environ.get('ZOTERO_LIBRARY_TYPE')
+api_key = os.environ.get('ZOTERO_API_KEY')
 
 
 class ZoteroView(BrowserPage):
@@ -7,6 +13,12 @@ class ZoteroView(BrowserPage):
     Browser page
     """
     zotero_view = ViewPageTemplateFile('zotero_view.pt')
+    zotero_library = zotero.Zotero(library_id, library_type, api_key)
 
     def __call__(self):
         return self.zotero_view
+
+
+    def get_tags(self):
+        return zotero_library.tags()
+
