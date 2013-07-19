@@ -3,8 +3,7 @@
         <div style="text-align: center">
             <h1 tal:content="view/context/Title"></h1>
             <br />
-            <a href="view/context/@@images/image"><img tal:condition="view/context/@@images/image" tal:define="scales context/@@images"
-                tal:replace="structure python: scales.tag('image', css_class='img-polaroid', scale='thumb')" /></a>
+            <a tal:condition="python: view.context.portal_type == 'image_artifact'" href="view/context/@@images/image_artifact"><img tal:condition="view/context/@@images/image_artifact" tal:define="scales context/@@images" tal:replace="structure python: scales.tag('image_artifact', css_class='img-polaroid', scale='thumb')" /></a>
             <br />
             <br />
             <!-- Button to trigger modal -->
@@ -37,7 +36,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="editMetadataLabel">Edit Metadata</h3>
                 </div>
-                <form tal:attributes="action python: view.context.absolute_url() + '/@@image-artifact-edit-metadata'" method="POST">
+                <form tal:attributes="action python: view.context.absolute_url() + '/@@artifact-edit-metadata'" method="POST">
 
                     <div class="modal-body">
                         <label>Contributor</label>
@@ -107,7 +106,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="editTagsLabel">Edit Tags</h3>
                 </div>
-                <form tal:attributes="action python: view.context.absolute_url() + '/@@image-artifact-edit-tags'" method="POST">
+                <form tal:attributes="action python: view.context.absolute_url() + '/@@artifact-edit-tags'" method="POST">
                     <div class="modal-body">
 
                         <textarea rows="5" name="tags" tal:content="view/get_tags"></textarea>

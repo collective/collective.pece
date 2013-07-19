@@ -15,7 +15,7 @@
   <element value="annotation"/>
  </property>
  <property name="allow_discussion">False</property>
- <property name="default_view">@@image-artifact-view</property>
+ <property name="default_view">@@artifact-view</property>
  <property name="view_methods">
   <element value="view"/>
  </property>

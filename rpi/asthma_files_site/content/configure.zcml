@@ -14,23 +14,23 @@
 
     <browser:page
         for="*"
-        name="image-artifact-view"
+        name="artifact-view"
         permission="zope2.Public"
-        class=".image_artifact.ImageArtifactView"
+        class=".artifact_view.ArtifactView"
         />
 
     <browser:page
         for="*"
-        name="image-artifact-edit-metadata"
+        name="artifact-edit-metadata"
         permission="zope2.Public"
-        class=".image_artifact.ImageArtifactEditMetadata"
+        class=".artifact_view.ArtifactEditMetadata"
         />
 
     <browser:page
         for="*"
-        name="image-artifact-edit-tags"
+        name="artifact-edit-tags"
         permission="zope2.Public"
-        class=".image_artifact.ImageArtifactEditTags"
+        class=".artifact_view.ArtifactEditTags"
         />
 
     <browser:page
