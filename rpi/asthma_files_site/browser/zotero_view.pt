@@ -1,8 +1,9 @@
 <div metal:use-macro="here/main_template/macros/master">
     <div metal:fill-slot="main">
+        <h1>Zotero Tags</h1>
         <ul>
             <div tal:repeat="tag view/get_tags">
-                <li tal:content="tag"></li>
+                <li tal:content="tag/tag"></li>
             </div>
         </ul>
     </div>
