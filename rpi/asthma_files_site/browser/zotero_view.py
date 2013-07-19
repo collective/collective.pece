@@ -2,6 +2,8 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from pyzotero import zotero
 from zope.publisher.browser import BrowserPage
 
+import os
+
 
 library_id = os.environ.get('ZOTERO_LIBRARY_ID')
 library_type = os.environ.get('ZOTERO_LIBRARY_TYPE')
