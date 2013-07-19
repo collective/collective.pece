@@ -18,7 +18,7 @@ class ZoteroView(BrowserPage):
     zotero_library = zotero.Zotero(library_id, library_type, api_key)
 
     def __call__(self):
-        return self.zotero_view
+        return self.zotero_view()
 
 
     def get_tags(self):
