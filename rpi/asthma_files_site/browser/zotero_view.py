@@ -22,5 +22,4 @@ class ZoteroView(BrowserPage):
 
 
     def get_tags(self):
-        return zotero_library.tags()
-
+        return self.zotero_library.tags()
