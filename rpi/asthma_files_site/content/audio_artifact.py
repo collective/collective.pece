@@ -3,7 +3,7 @@ from plone.namedfile.field import NamedBlobFile
 from zope.schema import TextLine
 
 
-class IFileArtifact(form.Schema):
+class IAudioArtifact(form.Schema):
     """
     Content type
     """
