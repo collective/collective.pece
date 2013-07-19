@@ -8,7 +8,7 @@ class IFileArtifact(form.Schema):
     Content type
     """
 
-    file_artifact = NamedBlobFile(title=u"File Artifact")
+    audio_artifact = NamedBlobFile(title=u"Audio Artifact")
 
     coverage = TextLine(title=u"Coverage", required=False)
 
