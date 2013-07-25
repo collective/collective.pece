@@ -11,9 +11,8 @@ setup(
     },
     install_requires=[
         'setuptools',
-        'collective.documentviewer',
+        'collective.cover',
         'five.grok',
-        'plone.app.referenceablebehavior',
         'pyzotero',
         'z3c.jbot',
     ],
