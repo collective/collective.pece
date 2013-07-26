@@ -2,6 +2,7 @@
 <object name="portal_types" meta_type="Plone Types Tool">
  <property name="title">Controls the available content types in your portal</property>
  <object name="annotation" meta_type="Dexterity FTI"/>
+ <object name="asthma_file" meta_type="Dexterity FTI"/>
  <object name="audio_artifact" meta_type="Dexterity FTI"/>
  <object name="file_artifact" meta_type="Dexterity FTI"/>
  <object name="image_artifact" meta_type="Dexterity FTI"/>
