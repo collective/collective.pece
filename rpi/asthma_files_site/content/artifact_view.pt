@@ -5,7 +5,7 @@
             <br />
             <div class="img-polaroid" tal:condition="python: view.context.portal_type == 'audio_artifact'">Audio Artifact</div>
             <div class="img-polaroid" tal:condition="python: view.context.portal_type == 'file_artifact'">File Artifact</div>
-            <a tal:condition="python: view.context.portal_type == 'image_artifact'" href="view/context/@@images/image_artifact"><img tal:condition="view/context/@@images/image_artifact" tal:define="scales context/@@images" tal:replace="structure python: scales.tag('image_artifact', css_class='img-polaroid', scale='thumb')" /></a>
+            <a tal:condition="python: view.context.portal_type == 'image'" href="view/context/@@images/image"><img tal:condition="view/context/@@images/image" tal:define="scales context/@@images" tal:replace="structure python: scales.tag('image', css_class='img-polaroid', scale='thumb')" /></a>
             <div class="img-polaroid" tal:condition="python: view.context.portal_type == 'video_artifact'">Video Artifact</div>
             <br />
             <br />
