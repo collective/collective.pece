@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<object name="file_artifact" meta_type="Dexterity FTI" i18n:domain="plone"
+<object name="document_artifact" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="title" i18n:translate="">Document Artifact</property>
  <property name="description" i18n:translate="">None</property>
  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
- <property name="factory">file_artifact</property>
+ <property name="factory">document_artifact</property>
  <property
-    name="add_view_expr">string:${folder_url}/++add++file_artifact</property>
+    name="add_view_expr">string:${folder_url}/++add++document_artifact</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
  <property name="global_allow">True</property>
