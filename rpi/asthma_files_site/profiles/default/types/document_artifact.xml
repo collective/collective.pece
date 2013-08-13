@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="file_artifact" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
- <property name="title" i18n:translate="">File Artifact</property>
+ <property name="title" i18n:translate="">Document Artifact</property>
  <property name="description" i18n:translate="">None</property>
  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
  <property name="factory">file_artifact</property>
@@ -27,7 +27,7 @@
   <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
  </property>
- <property name="schema">rpi.asthma_files_site.content.file_artifact.IFileArtifact</property>
+ <property name="schema">rpi.asthma_files_site.content.document_artifact.IDocumentArtifact</property>
  <property name="model_source"></property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>

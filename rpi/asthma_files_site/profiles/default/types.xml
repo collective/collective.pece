@@ -4,7 +4,7 @@
  <object name="annotation" meta_type="Dexterity FTI"/>
  <object name="asthma_file" meta_type="Dexterity FTI"/>
  <object name="audio_artifact" meta_type="Dexterity FTI"/>
- <object name="file_artifact" meta_type="Dexterity FTI"/>
+ <object name="document_artifact" meta_type="Dexterity FTI"/>
  <object name="image_artifact" meta_type="Dexterity FTI"/>
  <object name="question" meta_type="Dexterity FTI"/>
  <object name="response" meta_type="Dexterity FTI"/>
