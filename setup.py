@@ -3,6 +3,10 @@ from setuptools import setup
 
 
 setup(
+    author="Alex Clark",
+    author_email="aclark@aclark.net",
+    description="Asthma Files Site",
+    long_description=open("README.rst").read(),
     name='rpi.asthma_files_site',
     packages=find_packages(),
     namespace_packages=['rpi'],
