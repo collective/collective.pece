@@ -1,3 +1,4 @@
+from AccessControl import getSecurityManager
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.uuid.utils import uuidToObject
 from plone.dexterity.utils import createContentInContainer
@@ -85,7 +86,9 @@ class ArtifactView():
                     questions.append((item, text))
                 else:  # Yes
                     add_another_question = True
-            annotation = createContentInContainer(self.context, 'annotation')
+            security_manager = getSecurityManager()
+            userid = security_manager.getUser().getId()
+            annotation = createContentInContainer(self.context, 'annotation', title='%s-annotation' % userid)
             for uid, text in questions:  # Process questions
                 if text is not '':
                     question = uuidToObject(uid)
