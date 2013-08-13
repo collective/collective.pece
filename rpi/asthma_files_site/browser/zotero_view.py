@@ -5,9 +5,9 @@ from zope.publisher.browser import BrowserPage
 import os
 
 
-library_id = os.environ.get('ZOTERO_LIBRARY_ID')
-library_type = os.environ.get('ZOTERO_LIBRARY_TYPE')
-api_key = os.environ.get('ZOTERO_API_KEY')
+library_id = os.environ.get('ZOTERO_LIBRARY_ID', 'null')
+library_type = os.environ.get('ZOTERO_LIBRARY_TYPE', 'group')
+api_key = os.environ.get('ZOTERO_API_KEY', 'null')
 
 
 class ZoteroView(BrowserPage):
