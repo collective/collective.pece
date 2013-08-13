@@ -3,12 +3,12 @@ from plone.namedfile.field import NamedBlobFile
 from zope.schema import TextLine
 
 
-class IFileArtifact(form.Schema):
+class IDocumentArtifact(form.Schema):
     """
     Content type
     """
 
-    file_artifact = NamedBlobFile(title=u"File Artifact")
+    document_artifact = NamedBlobFile(title=u"Document Artifact")
 
     coverage = TextLine(title=u"Coverage", required=False)
 
