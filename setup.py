@@ -28,6 +28,7 @@ setup(
     install_requires=[
         'setuptools',
         'collective.cover',
+        'collective.monkeypatcher',
         'five.grok',
         'pyzotero',
         'z3c.jbot',
