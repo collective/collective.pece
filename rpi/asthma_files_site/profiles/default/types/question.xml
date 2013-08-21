@@ -21,14 +21,10 @@
  <property name="add_permission">cmf.AddPortalContent</property>
 <!-- <property name="klass">plone.dexterity.content.Container</property> -->
  <property name="behaviors">
-  <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
  </property>
- <property name="schema"></property>
- <property
-    name="model_source">&lt;model xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
-    &lt;schema/&gt;
-  &lt;/model&gt;</property>
+ <property name="schema">rpi.asthma_files_site.content.question.IQuestion</property>
+ <property name="model_source"></property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
  <alias from="(Default)" to="(dynamic view)"/>
