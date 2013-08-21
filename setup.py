@@ -31,12 +31,13 @@ setup(
     entry_points={
         'z3c.autoinclude.plugin': 'target = plone',
     },
+    include_package_data=True,
     install_requires=[
         'setuptools',
         'collective.cover',
         'collective.monkeypatcher',
         'five.grok',
-        'pyzotero',
+#        'pyzotero',
         'z3c.jbot',
     ],
     version=VERSION,
