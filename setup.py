@@ -2,6 +2,9 @@ from setuptools import find_packages
 from setuptools import setup
 
 
+VERSION="0.0.1"
+
+
 setup(
     author="Alex Clark",
     author_email="aclark@aclark.net",
@@ -14,7 +17,10 @@ setup(
         "Plone",
     ],
     license="GPL",
-    long_description=open("README.rst").read(),
+    long_description=(
+        open("README.rst").read() + '\n' +
+        open("CHANGES.txt").read()
+        ),
     name='rpi.asthma_files_site',
     packages=find_packages(),
     test_suite="rpi.asthma_files_site.tests",
@@ -33,6 +39,6 @@ setup(
         'pyzotero',
         'z3c.jbot',
     ],
-    version="0.0.1",
+    version=VERSION,
     zip_safe=True,
 )
