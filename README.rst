@@ -21,3 +21,19 @@ Or add the functionality to an existing site:
 
 Usage
 -----
+
+Follow these steps to begin using the "Asthma Files Site" functionality.
+
+Add a question
+--------------
+
+Questions facilitate artifact annotations when researchers respond to them in context. Before you do anything else, add an Asthma Question to your site.
+
+.. image:: screenshot4.png
+
+Create an artifact
+------------------
+
+An "Asthma File" research document is produced via the assembly of artifacts and annotations. So next, add an Artifact to your site e.g. an "Artifact (Image)".
+
+.. image:: screenshot5.png
