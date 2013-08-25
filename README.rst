@@ -11,7 +11,7 @@ The "Asthma Files Site" add-on for Plone is a research tool, currently in use by
 Installation
 ------------
 
-To install "Asthma Files Site" functionality on your Plone site, add ``rpi.asthma_files_site`` to your list of Plone instance eggs in your ``buildout.cfg`` file. Run Buildout and restart Plone. Create a new Plone site with the add-on selected:
+To install "Asthma Files Site" functionality on your Plone site, add ``rpi.asthma_files_site`` to your list of Plone "instance eggs" in your ``buildout.cfg`` file. Run Buildout and restart Plone. Create a new Plone site with the add-on selected:
 
 .. image:: screenshot1.png
 
