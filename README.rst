@@ -22,7 +22,7 @@ Or add the functionality to an existing site:
 Usage
 -----
 
-Follow these steps to begin using the "Asthma Files Site" functionality.
+Follow these steps to begin using the "Asthma Files Site" functionality in your Plone site.
 
 Add a question
 --------------
