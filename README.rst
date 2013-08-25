@@ -13,11 +13,11 @@ Installation
 
 To install "Asthma Files Site" functionality on your Plone site, add ``rpi.asthma_files_site`` to your list of Plone instance eggs in your ``buildout.cfg`` file. Run Buildout and restart Plone. Create a new Plone site with the add-on selected:
 
-.. img:: screenshot1.png
+.. image:: screenshot1.png
 
 Or add the functionality to an existing site:
 
-.. img:: screenshot2.png
+.. image:: screenshot2.png
 
 Usage
 -----
