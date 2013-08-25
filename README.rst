@@ -34,6 +34,6 @@ Questions facilitate Annotations of Artifacts when researchers respond to them i
 Create an artifact
 ------------------
 
-An "Asthma File" research document is produced via the assembly of artifacts and annotations. So next, add an Artifact to your site e.g. an "Artifact (Image)".
+An "Asthma File" document is produced via the assembly of artifacts and annotations. So next, add an Artifact to your site e.g. an "Artifact (Image)".
 
 .. image:: screenshot5.png
