@@ -27,7 +27,7 @@ Follow these steps to begin using the "Asthma Files Site" functionality in your 
 Add a question
 --------------
 
-Questions facilitate artifact annotations when researchers respond to them in context. Before you do anything else, add an Asthma Question to your site.
+Questions facilitate Annotations of Artifacts when researchers respond to them in context. Before you do anything else, add an Asthma Question to your site.
 
 .. image:: screenshot4.png
 
