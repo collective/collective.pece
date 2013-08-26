@@ -19,7 +19,7 @@ setup(
     license="GPL",
     long_description=(
         open("README.rst").read() + '\n' +
-        open("CHANGES.txt").read()
+        open("CHANGES.rst").read()
         ),
     name='rpi.asthma_files_site',
     packages=find_packages(),
