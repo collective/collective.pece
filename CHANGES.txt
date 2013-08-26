@@ -4,6 +4,8 @@ Changelog
 0.0.2 - 08/25/2013
 ------------------
 
+- Add empty registry
+- Remove dep on p.a.theming
 - Add preliminary installation and usage documentation.
 - UI change: '(Asthma) Question' -> Asthma Question.
 - Remove logo customization until Diazo theme is completed/supported.
