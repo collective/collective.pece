@@ -41,6 +41,10 @@ An "Asthma File" is produced via the assembly of artifacts and annotations. So n
 Create an Asthma File
 ---------------------
 
-Now we can create an Asthma File, which is a collaborative document consisting of multiple Artifacts, Annotations, etc. Made possible via the use of Collective Cover.
+Now we can create an Asthma File, which is a collaborative document consisting of multiple Artifacts, Annotations, etc. Made possible via the use of Collective Cover. [1]_
 
 .. image:: screenshot6.png
+
+.. [1] Catch 22: We'd like to customize the available types for Cover, but they don't exist until we install ourselves first. Workaround: customize TTW e.g.
+
+.. image:: screenshot7.png
