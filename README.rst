@@ -43,4 +43,4 @@ Create an Asthma File
 
 Now we can create an Asthma File, which is a collaborative document consisting of multiple Artifacts, Annotations, etc. Made possible via the use of Collective Cover.
 
-.. image:: screenshot5.png
+.. image:: screenshot6.png
