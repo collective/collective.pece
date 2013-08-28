@@ -1,23 +1,11 @@
 <configure
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:gs="http://namespaces.zope.org/genericsetup"
-    xmlns:monkey="http://namespaces.plone.org/monkey"
     xmlns:plone="http://namespaces.plone.org/plone">
 
     <include package=".browser" />
     <include package=".content" />
     <include package="five.grok" />
-    <include package="collective.monkeypatcher" />
-    <include package="z3c.jbot" file="meta.zcml" />
-
-<!-- Disable new-style logo customization until Diazo theme included is properly supported. --> 
-<!--
-    <browser:jbot directory="template-overrides" />
-    <browser:resource
-        name="asthma_files_logo.png"
-        image="theme/images/logo.png"
-        />
--->
 
     <gs:registerProfile
         name="default"
@@ -26,23 +14,5 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         title="Asthma Files Site"
         />
-
-<!--
-    <monkey:patch
-        description="Add image_artifact to Banner tile"
-        class="collective.cover.tiles.banner.BannerTile"
-        original="accepted_ct"
-        replacement=".content.image_artifact.accepted_ct"
-        />
-
-    <monkey:patch
-        description="Add image_artifact to Banner tile"
-        class="collective.cover.tiles.banner.BannerTile"
-        original="accepted_ct"
-        replacement=".content.image_artifact.populate_with_object"
-        />
--->
-
-    <plone:static directory="theme" type="theme" />
 
 </configure>
