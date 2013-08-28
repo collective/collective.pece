@@ -1,0 +1,39 @@
+<registry>
+<!-- Catch 22: We'd like to customize the available types for Cover, but they don't exist until we install ourselves first. -->
+<!--
+  <record name="collective.cover.controlpanel.ICoverSettings.searchable_content_types" interface="collective.cover.controlpanel.ICoverSettings" field="searchable_content_types">
+    <field type="plone.registry.field.List">
+      <default>
+        <element>Collection</element>
+        <element>Document</element>
+        <element>File</element>
+        <element>Form Folder</element>
+        <element>Image</element>
+        <element>Link</element>
+        <element>News Item</element>
+      </default>
+      <description>Only objects of these content types will be searched on the content chooser.</description>
+      <required>False</required>
+      <title>Searchable Content Types</title>
+      <value_type type="plone.registry.field.Choice">
+        <vocabulary>collective.cover.AvailableContentTypes</vocabulary>
+      </value_type>
+    </field>
+    <value>
+      <element>Collection</element>
+      <element>Document</element>
+      <element>File</element>
+      <element>Image</element>
+      <element>Link</element>
+      <element>News Item</element>
+      <element>annotation</element>
+      <element>audio_artifact</element>
+      <element>document_artifact</element>
+      <element>image_artifact</element>
+      <element>video_artifact</element>
+      <element>asthma_file</element>
+      <element>question</element>
+    </value>
+  </record>
+-->
+</registry>

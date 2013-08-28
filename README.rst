@@ -24,16 +24,27 @@ Usage
 
 Follow these steps to begin using the "Asthma Files Site" functionality in your Plone site.
 
-Add a question
+Add a Question
 --------------
 
 *Questions* facilitate *Annotations* of *Artifacts* when researchers respond to them in context. Before you do anything else, add an Asthma Question to your site.
 
 .. image:: screenshot4.png
 
-Create an artifact
+Create an Artifact
 ------------------
 
-An "Asthma File" document is produced via the assembly of artifacts and annotations. So next, add an Artifact to your site e.g. an "Artifact (Image)".
+An "Asthma File" is produced via the assembly of artifacts and annotations. So next, add an Artifact to your site e.g. an "Artifact (Image)".
 
 .. image:: screenshot5.png
+
+Create an Asthma File
+---------------------
+
+Now we can create an Asthma File, which is a collaborative document consisting of multiple Artifacts, Annotations, etc. Made possible via the use of Collective Cover. [1]_
+
+.. image:: screenshot6.png
+
+.. [1] Catch 22: We'd like to customize the available types for Cover, but they don't exist until we install ourselves first. Workaround: customize TTW e.g.
+
+.. image:: screenshot7.png

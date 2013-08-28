@@ -2,7 +2,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-VERSION="0.0.1"
+VERSION="0.0.2"
 
 
 setup(
@@ -19,7 +19,7 @@ setup(
     license="GPL",
     long_description=(
         open("README.rst").read() + '\n' +
-        open("CHANGES.txt").read()
+        open("CHANGES.rst").read()
         ),
     name='rpi.asthma_files_site',
     packages=find_packages(),
