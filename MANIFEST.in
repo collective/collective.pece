@@ -1,5 +1,6 @@
 include *.png
 include *.py
+include *.rst
 include *.txt
 include buildout.cfg
 recursive-include rpi *.cfg
