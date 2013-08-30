@@ -10,12 +10,7 @@
 
             <div class="img-polaroid" tal:condition="python: view.context.portal_type == 'video_artifact'">
                 <video width="320" height="240" controls>
-                    <source tal:attributes="
-
-src python: view/context/absolute_url;
-type view/context/video_artifact/contentType"
-
-                        />
+                    <source /> 
 
                     Your browser does not support the video tag.
                 </video> 
