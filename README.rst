@@ -19,6 +19,10 @@ Or add the functionality to an existing site:
 
 .. image:: screenshot2.png
 
+After installation, you should be able to add 6 new content types:
+
+.. image:: screenshot8.png
+
 Usage
 -----
 
