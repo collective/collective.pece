@@ -56,6 +56,8 @@ Image artifact
 Video artifact
 ~~~~~~~~~~~~~~
 
+.. image:: screenshot10.png
+
 Create an Asthma File
 ---------------------
 
