@@ -1,3 +1,4 @@
+from five import grok
 from plone.directives import form
 from plone.namedfile.field import NamedBlobFile
 from zope.schema import TextLine
@@ -7,7 +8,6 @@ class IDocumentArtifact(form.Schema):
     """
     Content type
     """
-
     document_artifact = NamedBlobFile(title=u"Document Artifact")
     form.primary('document_artifact')
 
