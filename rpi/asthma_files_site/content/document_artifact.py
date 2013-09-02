@@ -9,6 +9,7 @@ class IDocumentArtifact(form.Schema):
     """
 
     document_artifact = NamedBlobFile(title=u"Document Artifact")
+    form.primary('document_artifact')
 
     coverage = TextLine(title=u"Coverage", required=False)
 

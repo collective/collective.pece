@@ -9,6 +9,7 @@ class IVideoArtifact(form.Schema):
     """
 
     video_artifact = NamedBlobFile(title=u"Video Artifact")
+    form.primary('video_artifact')
 
     coverage = TextLine(title=u"Coverage", required=False)
 
