@@ -35,12 +35,24 @@ Add a Question
 
 .. image:: screenshot4.png
 
-Create an Artifact
-------------------
+Create Artifacts
+----------------
 
-An "Asthma File" is produced via the assembly of artifacts and annotations. So next, add an Artifact to your site e.g. an "Artifact (Image)".
+An "Asthma File" is produced via the assembly of artifacts and annotations. So next, add some artifacts to your site.
+
+Audio artifact
+~~~~~~~~~~~~~~
+
+Document artifact
+~~~~~~~~~~~~~~~~~
+
+Image artifact
+~~~~~~~~~~~~~~
 
 .. image:: screenshot5.png
+
+Video artifact
+~~~~~~~~~~~~~~
 
 Create an Asthma File
 ---------------------
