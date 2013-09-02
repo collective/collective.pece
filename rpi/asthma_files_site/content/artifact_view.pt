@@ -7,7 +7,7 @@
 
             <div tal:condition="python: view.context.portal_type == 'audio_artifact'">Audio Artifact
                 <audio controls>
-                    <source tal:attributes="src view/context/audio_artifact/data; type view/context/audio_artifact/contentType" />
+                    <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.audio_artifact/@@download'" />
                     Your browser does not support the audio element.
                 </audio> 
             </div>
