@@ -5,6 +5,8 @@
             <h1 tal:content="view/context/Title"></h1>
             <h2 tal:content="view/context/Description"></h2>
             <br />
+
+
             <div tal:condition="python: view.context.portal_type == 'audio_artifact'">
                 <span tal:content="view/context/getId"></span>
                 <audio controls>
@@ -14,11 +16,15 @@
                 </audio> 
             </div>
 
-            <div tal:condition="python: view.context.portal_type == 'file_artifact'">File Artifact</div>
+            <div tal:condition="python: view.context.portal_type == 'document_artifact'">Document Artifact</div>
 
-            <a tal:condition="python: view.context.portal_type == 'image_artifact'" href="@@images/image"><img tal:condition="view/context/@@images/image" tal:define="scales context/@@images" tal:replace="structure python: scales.tag('image', css_class='img-polaroid', scale='thumb')" /></a>
+            <div tal:condition="python: view.context.portal_type == 'image_artifact'">
+                <span tal:content="view/context/getId"></span>
+                <a href="@@images/image"><img tal:condition="view/context/@@images/image" tal:define="scales context/@@images" tal:replace="structure python: scales.tag('image', css_class='img-polaroid', scale='thumb')" /></a>
+            </div>
 
             <div class="img-polaroid" tal:condition="python: view.context.portal_type == 'video_artifact'">
+                <span tal:content="view/context/getId"></span>
                 <video width="320" height="240" controls>
                     <!-- Why @@edit ? -->
                     <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.video_artifact/@@download'" />
