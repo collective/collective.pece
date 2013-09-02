@@ -35,7 +35,7 @@ setup(
     install_requires=[
         'setuptools',
         'collective.cover',
-        'collective.monkeypatcher',
+        'collective.documentviewer',
         'five.grok',
 #        'pyzotero',
         'z3c.jbot',
