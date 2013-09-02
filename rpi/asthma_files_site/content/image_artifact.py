@@ -9,8 +9,9 @@ class IImageArtifact(form.Schema):
     Content type
     """
 
-    image_artifact = NamedBlobImage(title=u"Image Artifact")
-    form.primary('image_artifact')
+    # XXX Must be called 'image' to work with c.cover
+    image = NamedBlobImage(title=u"Image Artifact")
+    form.primary('image')
 
     coverage = TextLine(title=u"Coverage", required=False)
 
