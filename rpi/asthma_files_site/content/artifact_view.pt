@@ -8,28 +8,28 @@
 
 
             <div tal:condition="python: view.context.portal_type == 'audio_artifact'">
-                <span tal:content="view/context/getId"></span>
                 <audio controls>
                     <!-- Why @@edit ? -->
                     <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.audio_artifact/@@download'" />
                     Your browser does not support the audio element.
                 </audio> 
+                <div tal:content="view/context/getId"></div>
             </div>
 
             <div tal:condition="python: view.context.portal_type == 'document_artifact'">Document Artifact</div>
 
             <div tal:condition="python: view.context.portal_type == 'image_artifact'">
-                <span tal:content="view/context/getId"></span>
                 <a href="@@images/image"><img tal:condition="view/context/@@images/image" tal:define="scales context/@@images" tal:replace="structure python: scales.tag('image', css_class='img-polaroid', scale='thumb')" /></a>
+                <div tal:content="view/context/getId"></div>
             </div>
 
             <div class="img-polaroid" tal:condition="python: view.context.portal_type == 'video_artifact'">
-                <span tal:content="view/context/getId"></span>
                 <video width="320" height="240" controls>
                     <!-- Why @@edit ? -->
                     <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.video_artifact/@@download'" />
                     Your browser does not support the video tag.
                 </video> 
+                <div tal:content="view/context/getId"></div>
             </div>
 
             <br />
