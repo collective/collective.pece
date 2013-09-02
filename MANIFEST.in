@@ -1,14 +1,7 @@
 include *.png
 include *.py
 include *.rst
-include *.txt
 include buildout.cfg
-recursive-include rpi *.cfg
-recursive-include rpi *.css
-recursive-include rpi *.html
-recursive-include rpi *.ico
-recursive-include rpi *.js
-recursive-include rpi *.png
 recursive-include rpi *.pt
 recursive-include rpi *.xml
 recursive-include rpi *.zcml

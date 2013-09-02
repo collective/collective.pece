@@ -43,6 +43,8 @@ An "Asthma File" is produced via the assembly of artifacts and annotations. So n
 Audio artifact
 ~~~~~~~~~~~~~~
 
+.. Note:: Only OGG audio currently supported
+
 .. image:: screenshot9.png
 
 Document artifact
@@ -55,6 +57,8 @@ Image artifact
 
 Video artifact
 ~~~~~~~~~~~~~~
+
+.. Note:: Only OGG video currently supported
 
 .. image:: screenshot10.png
 
