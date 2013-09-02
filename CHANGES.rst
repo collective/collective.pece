@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.0.4 - 09/02/2013
+------------------
+
+- Change title/id generation on all artifacts to use INameFromFileName behavior
+
 0.0.3 - 08/28/2013
 ------------------
 
