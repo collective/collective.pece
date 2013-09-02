@@ -1,11 +1,12 @@
 <div metal:use-macro="here/main_template/macros/master">
     <div metal:fill-slot="main">
         <div style="text-align: center">
+
             <h1 tal:content="view/context/Title"></h1>
-
+            <h2 tal:content="view/context/Description"></h2>
             <br />
-
-            <div tal:condition="python: view.context.portal_type == 'audio_artifact'">Audio Artifact
+            <div tal:condition="python: view.context.portal_type == 'audio_artifact'">
+                <span tal:content="view/context/getId"></span>
                 <audio controls>
                     <!-- Why @@edit ? -->
                     <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.audio_artifact/@@download'" />

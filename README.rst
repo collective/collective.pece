@@ -38,10 +38,12 @@ Add a Question
 Create Artifacts
 ----------------
 
-An "Asthma File" is produced via the assembly of artifacts and annotations. So next, add some artifacts to your site.
+An "Asthma File" is produced via the assembly of artifacts and annotations. So next, add some artifacts to your site. E.g.:
 
 Audio artifact
 ~~~~~~~~~~~~~~
+
+.. image:: screenshot9.png
 
 Document artifact
 ~~~~~~~~~~~~~~~~~
