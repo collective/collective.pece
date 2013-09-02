@@ -25,7 +25,7 @@
  <property name="behaviors">
   <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
   <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
-  <element value="plone.app.content.interfaces.INameFromTitle"/>
+  <element value="plone.app.dexterity.behaviors.filename.INameFromFileName"/>
  </property>
  <property name="schema">rpi.asthma_files_site.content.image_artifact.IImageArtifact</property>
  <property name="model_source"></property>
