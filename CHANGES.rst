@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.0.5 - 09/08/2013
+------------------
+
+- Add tests
+- More documentation
+- Provide Zotero.com and collective.documentviewer integration
+
 0.0.4 - 09/02/2013
 ------------------
 
