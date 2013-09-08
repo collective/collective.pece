@@ -15,14 +15,4 @@
         title="Asthma Files Site"
         />
 
-    <configure package="collective.documentviewer">
-        <browser:page
-            name="documentviewer"
-            for="rpi.asthma_files_site.content.document_artifact.IDocumentArtifact"
-            class=".views.DocumentViewerView"
-            template="templates/documentviewerdx.pt"
-            permission="zope2.View"
-            layer=".interfaces.ILayer"/>
-    </configure>
-
 </configure>

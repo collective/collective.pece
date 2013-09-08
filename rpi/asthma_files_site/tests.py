@@ -11,6 +11,14 @@ class TestAsthmaFilesSiteContentTypes(PloneTestCase.PloneTestCase):
     Test Asthma Files Site content types
     """
 
+    def test_add_asthma_file(self):
+        """
+        Test add asthma question to folder
+        """
+        self.folder.invokeFactory(
+            'asthma_question', 'proactively-pursue-enabled-technology')
+        assert 'proactively-pursue-enabled-technology' in self.folder
+
     def test_add_asthma_question(self):
         """
         Test add asthma question to folder
