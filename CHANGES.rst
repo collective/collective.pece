@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.0.5 - 09/08/2013
+0.0.5 - 09/09/2013
 ------------------
 
 - Rename question -> asthma_question
