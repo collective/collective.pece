@@ -84,7 +84,7 @@ To configure the demo view, set the following environment variables in your shel
     export ZOTERO_LIBRARY_ID=
     export ZOTERO_LIBRARY_TYPE=
 
-Then see: http://localhost:8080/Plone/@@zotero_view.
+Then check: http://localhost:8080/Plone/@@zotero.
 
 Known Issues
 ------------
