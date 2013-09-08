@@ -4,6 +4,7 @@ Changelog
 0.0.5 - 09/09/2013
 ------------------
 
+- Remove logo customization, part II: template-overrides 
 - Rename question -> asthma_question
 - Add tests
 - More documentation
