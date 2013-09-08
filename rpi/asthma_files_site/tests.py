@@ -6,12 +6,21 @@ PloneTestCase.setupPloneSite(
 )
 
 
-class TestAsthmaFilesSite(PloneTestCase.PloneTestCase):
+class TestAsthmaFilesSiteContentTypes(PloneTestCase.PloneTestCase):
     """
+    Test Asthma Files Site content types
     """
 
-    def test_add_artifact_image(self):
+    def test_add_document_artifact(self):
         """
+        Test adding document artifact to a folder
+        """
+        self.folder.invokeFactory('document_artifact', 'asthma.pdf')
+        assert 'asthma.pdf' in self.folder
+
+    def test_add_image_artifact(self):
+        """
+        Test adding an image artifact to a folder
         """
         self.folder.invokeFactory('image_artifact', 'asthma.jpg')
         assert 'asthma.jpg' in self.folder
