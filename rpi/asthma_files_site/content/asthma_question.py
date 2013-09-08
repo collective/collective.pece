@@ -1,5 +1,4 @@
 from plone.directives import form
-from plone.namedfile.field import NamedBlobImage
 from zope.schema import TextLine
 
 

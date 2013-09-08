@@ -88,7 +88,8 @@ class ArtifactView():
                     add_another_question = True
             security_manager = getSecurityManager()
             userid = security_manager.getUser().getId()
-            annotation = createContentInContainer(self.context, 'annotation', title='%s-annotation' % userid)
+            annotation = createContentInContainer(
+                self.context, 'annotation', title='%s-annotation' % userid)
             for uid, text in questions:  # Process questions
                 if text is not '':
                     question = uuidToObject(uid)

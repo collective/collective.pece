@@ -1,4 +1,3 @@
-from five import grok
 from plone.directives import form
 from plone.namedfile.field import NamedBlobFile
 from zope.schema import TextLine
