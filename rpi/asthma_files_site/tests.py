@@ -1,7 +1,9 @@
 from Products.PloneTestCase import PloneTestCase
 
 
-PloneTestCase.setupPloneSite()
+PloneTestCase.setupPloneSite(
+    extension_profiles=('rpi.asthma_files_site:default',)
+)
 
 
 class TestAsthmaFilesSite(PloneTestCase.PloneTestCase):
