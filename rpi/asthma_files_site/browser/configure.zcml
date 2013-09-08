@@ -4,7 +4,7 @@
     <browser:page 
         class=".zotero_view.ZoteroView"
         for="*"
-        name="zotero-view"
+        name="zotero"
         permission="zope2.View"
         />
 
