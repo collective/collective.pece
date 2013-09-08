@@ -78,11 +78,11 @@ Zotero Integration
 
 This add-on provides experimental integration with ``zotero.com``, currently in proof-of-concept stage i.e. there is API connectivity and nothing else. We are waiting for community input to help us decide the first feature.
 
-To configure the demo view, set the following environment variables in your shell before running Plone::
+To configure the demo view, set the following environment variables in your shell before running Plone e.g.::
 
-    $ export ZOTERO_API_KEY=
-    $ export ZOTERO_LIBRARY_ID=
-    $ export ZOTERO_LIBRARY_TYPE=
+    $ export ZOTERO_API_KEY=dFXmvyQvLMQpdfNs
+    $ export ZOTERO_LIBRARY_ID=1234
+    $ export ZOTERO_LIBRARY_TYPE=group
 
 Then check: http://localhost:8080/Plone/@@zotero.
 
