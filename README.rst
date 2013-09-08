@@ -72,3 +72,8 @@ Now we can create an Asthma File, which is a collaborative document consisting o
 .. [1] Catch 22: We'd like to customize the available types for Cover, but they don't exist until we install ourselves first. Workaround: customize TTW e.g.
 
 .. image:: screenshot7.png
+
+Known Issues
+------------
+
+- PyZotero's feedparser version spec conflicts with Plone, see: https://github.com/urschrei/pyzotero/issues/29
