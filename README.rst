@@ -87,4 +87,10 @@ To configure the demo view, set the following environment variables in your shel
 Known Issues
 ------------
 
-- PyZotero's feedparser version spec conflicts with Plone, see: https://github.com/urschrei/pyzotero/issues/29
+feedparser
+~~~~~~~~~~
+
+PyZotero's feedparser version spec conflicts with Plone, see: https://github.com/urschrei/pyzotero/issues/29. To work around this issue, override Plone's specification in your ``buildout.cfg`` e.g.:
+
+    [versions]
+    feedparser = 5.1.3
