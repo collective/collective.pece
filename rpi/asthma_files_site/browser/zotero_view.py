@@ -21,6 +21,5 @@ class ZoteroView(BrowserPage):
     def __call__(self):
         return self.zotero_view()
 
-
     def get_tags(self):
         return self.zotero_library.tags()
