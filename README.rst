@@ -80,9 +80,9 @@ This add-on provides experimental integration with ``zotero.com``, currently in 
 
 To configure the demo view, set the following environment variables in your shell before running Plone::
 
-    export ZOTERO_API_KEY=
-    export ZOTERO_LIBRARY_ID=
-    export ZOTERO_LIBRARY_TYPE=
+    $ export ZOTERO_API_KEY=
+    $ export ZOTERO_LIBRARY_ID=
+    $ export ZOTERO_LIBRARY_TYPE=
 
 Then check: http://localhost:8080/Plone/@@zotero.
 
@@ -96,3 +96,9 @@ PyZotero's feedparser version spec conflicts with Plone, see: https://github.com
 
     [versions]
     feedparser = 5.1.3
+
+
+documentviewer
+~~~~~~~~~~~~~~
+
+``collective.documentviewer``'s Dexterity integration is in alpha stage, see: https://github.com/collective/collective.documentviewer/issues/39.
