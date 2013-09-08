@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<object name="question" meta_type="Dexterity FTI" i18n:domain="plone"
+<object name="asthma_question" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="title" i18n:translate="">Asthma Question</property>
  <property name="description" i18n:translate="">Questions facilitate artifact annotations when researchers respond to them in context</property>
  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
- <property name="factory">question</property>
+ <property name="factory">asthma_question</property>
  <property
-    name="add_view_expr">string:${folder_url}/++add++question</property>
+    name="add_view_expr">string:${folder_url}/++add++asthma_question</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
  <property name="global_allow">True</property>
@@ -23,7 +23,7 @@
  <property name="behaviors">
   <element value="plone.app.content.interfaces.INameFromTitle"/>
  </property>
- <property name="schema">rpi.asthma_files_site.content.question.IQuestion</property>
+ <property name="schema">rpi.asthma_files_site.content.asthma_question.IAsthmaQuestion</property>
  <property name="model_source"></property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>

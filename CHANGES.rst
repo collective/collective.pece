@@ -4,6 +4,7 @@ Changelog
 0.0.5 - 09/08/2013
 ------------------
 
+- Rename question -> asthma_question
 - Add tests
 - More documentation
 - Provide Zotero.com and collective.documentviewer integration

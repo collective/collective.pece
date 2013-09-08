@@ -3,7 +3,7 @@ from plone.namedfile.field import NamedBlobImage
 from zope.schema import TextLine
 
 
-class IQuestion(form.Schema):
+class IAsthmaQuestion(form.Schema):
     """
     Content type
     """
