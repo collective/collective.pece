@@ -90,7 +90,7 @@ Known Issues
 feedparser
 ~~~~~~~~~~
 
-PyZotero's feedparser version spec conflicts with Plone, see: https://github.com/urschrei/pyzotero/issues/29. To work around this issue, override Plone's specification in your ``buildout.cfg`` e.g.:
+PyZotero's feedparser version spec conflicts with Plone, see: https://github.com/urschrei/pyzotero/issues/29. To work around this issue, override Plone's specification in your ``buildout.cfg`` e.g.::
 
     [versions]
     feedparser = 5.1.3
