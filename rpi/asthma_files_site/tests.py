@@ -16,7 +16,7 @@ class TestAsthmaFilesSiteContentTypes(PloneTestCase.PloneTestCase):
         Test add asthma question to folder
         """
         self.folder.invokeFactory('asthma_question',
-            'Proactively pursue enabled technology?')
+            'proactively-pursue-enabled-technology')
         assert 'proactively-pursue-enabled-technology' in self.folder
 
     def test_add_audio_artifact(self):
