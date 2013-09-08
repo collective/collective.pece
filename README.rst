@@ -73,6 +73,17 @@ Now we can create an Asthma File, which is a collaborative document consisting o
 
 .. image:: screenshot7.png
 
+Zotero Integration
+------------------
+
+This add-on provides experimental integration with ``zotero.com``, currently in proof-of-concept stage i.e. there is API connectivity and nothing else. We are waiting for community input to help us decide a feature set.
+
+To configure the demo view, set the following environment variables in your shell before running Plone::
+
+    export ZOTERO_API_KEY=
+    export ZOTERO_LIBRARY_ID=
+    export ZOTERO_LIBRARY_TYPE=
+
 Known Issues
 ------------
 
