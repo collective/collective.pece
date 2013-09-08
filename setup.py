@@ -37,7 +37,7 @@ setup(
         'collective.cover',
         'collective.documentviewer',
         'five.grok',
-#        'pyzotero',
+        'pyzotero',
         'z3c.jbot',
     ],
     version=VERSION,
