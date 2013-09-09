@@ -1,11 +1,9 @@
 <configure
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:gs="http://namespaces.zope.org/genericsetup"
-    xmlns:plone="http://namespaces.plone.org/plone">
+    xmlns:gs="http://namespaces.zope.org/genericsetup">
 
     <include package=".browser" />
     <include package=".content" />
-    <include package="five.grok" />
 
     <gs:registerProfile
         name="default"

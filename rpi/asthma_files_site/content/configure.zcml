@@ -4,12 +4,12 @@
     >
 
     <!-- Todo:
-        Fix permissions and context:
+        Fix permissions & context:
 
             for="*"
             permission="zope2.Public"
 
-        too permissive.
+        too vague and permissive.
         -->
 
     <browser:page
@@ -39,6 +39,8 @@
         permission="zope2.Public"
         template="annotation_view.pt"
         />
+
+    <include package="five.grok" />
 
     <grok:grok package="." />
 
