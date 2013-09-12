@@ -12,7 +12,7 @@ setup(
         "Framework :: Plone :: 4.3",
         "Programming Language :: Python :: 2.7",
     ],
-    description="Asthma Files Site",
+    description="The Platform for Experimental Collaborative Ethnography (PECE)",
     keywords=[
         "Plone",
     ],
@@ -21,7 +21,7 @@ setup(
         open("README.rst").read() + '\n' +
         open("CHANGES.rst").read()
         ),
-    name='rpi.asthma_files_site',
+    name='rpi_pece',
     packages=find_packages(),
     test_suite="rpi.asthma_files_site.tests",
     url="https://github.com/ACLARKNET/rpi.asthma_files_site",
