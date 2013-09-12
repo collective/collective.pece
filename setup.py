@@ -21,10 +21,10 @@ setup(
         open("README.rst").read() + '\n' +
         open("CHANGES.rst").read()
         ),
-    name='rpi_pece',
+    name='pece',
     packages=find_packages(),
-    test_suite="rpi_pece.tests",
-    url="https://github.com/ACLARKNET/rpi_pece",
+    test_suite="pece.tests",
+    url="https://github.com/ACLARKNET/pece",
     entry_points={
         'z3c.autoinclude.plugin': 'target = plone',
     },
