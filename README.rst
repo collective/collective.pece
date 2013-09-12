@@ -26,7 +26,7 @@ After installation, you should be able to add 6 new content types:
 Usage
 -----
 
-Follow these steps to begin using the "Asthma Files Site" functionality in your Plone site.
+Follow these steps to begin using the PECE functionality in your Plone site.
 
 Add a Question
 --------------
