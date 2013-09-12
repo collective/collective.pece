@@ -23,8 +23,8 @@ setup(
         ),
     name='rpi_pece',
     packages=find_packages(),
-    test_suite="rpi.asthma_files_site.tests",
-    url="https://github.com/ACLARKNET/rpi.asthma_files_site",
+    test_suite="rpi_pece.tests",
+    url="https://github.com/ACLARKNET/rpi_pece",
     namespace_packages=[
         'rpi'
     ],
