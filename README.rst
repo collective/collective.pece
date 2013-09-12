@@ -1,5 +1,5 @@
-Asthma Files Site
-=================
+The Platform for Experimental Ethnography (PECE)
+================================================
 
 A collective inquiry in to complex conditions. Development sponsored by Rensselaer Polytechnic Institute (RPI).
 
