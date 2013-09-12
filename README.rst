@@ -6,7 +6,7 @@ A collective inquiry in to complex conditions. Development sponsored by Renssela
 About
 -----
 
-The "Asthma Files Site" add-on for Plone is a research tool, currently in use by RPI but available to anyone doing similar research. It features Dexterity content types and a Collective Cover integration to enable the creation of an "Asthma File": a collectively developed document containing artifacts and annotations.
+The PECE add-on for Plone is a research tool, currently in use by `RPI <http://theasthmafiles.org>`_ but available to anyone doing similar research. It features Dexterity content types and a Collective Cover integration to enable the creation of an "Asthma File": a collectively developed document containing artifacts and annotations.
 
 Installation
 ------------
