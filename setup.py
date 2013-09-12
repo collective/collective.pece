@@ -25,9 +25,6 @@ setup(
     packages=find_packages(),
     test_suite="rpi_pece.tests",
     url="https://github.com/ACLARKNET/rpi_pece",
-    namespace_packages=[
-        'rpi'
-    ],
     entry_points={
         'z3c.autoinclude.plugin': 'target = plone',
     },
