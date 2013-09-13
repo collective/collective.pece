@@ -14,7 +14,7 @@ class IImageArtifact(form.Schema):
 
     coverage = TextLine(title=u"Coverage", required=False)
 
-    dublin_core_format = TextLine(title=u"Format", required=False)
+    format_ = TextLine(title=u"Format", required=False)
 
     identifier = TextLine(title=u"Identifier", required=False)
 
@@ -30,4 +30,4 @@ class IImageArtifact(form.Schema):
 
     subject = TextLine(title=u"Subject", required=False)
 
-    dublin_core_type = TextLine(title=u"Type", required=False)
+    type_ = TextLine(title=u"Type", required=False)

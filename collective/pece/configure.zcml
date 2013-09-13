@@ -7,7 +7,7 @@
 
     <gs:registerProfile
         name="default"
-        description="Install 'Platform for Experimental Ethnography (PECE)' functionality"
+        description="Install 'Platform for Experimental Ethnography (PECE)' site functionality"
         directory="profiles/default"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         title="Platform for Experimental Ethnography"
