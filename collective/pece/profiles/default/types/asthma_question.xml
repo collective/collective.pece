@@ -23,7 +23,7 @@
  <property name="behaviors">
   <element value="plone.app.content.interfaces.INameFromTitle"/>
  </property>
- <property name="schema">rpi.asthma_files_site.content.asthma_question.IAsthmaQuestion</property>
+ <property name="schema">collective.pece.content.asthma_question.IAsthmaQuestion</property>
  <property name="model_source"></property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>

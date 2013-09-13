@@ -27,7 +27,7 @@
   <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
   <element value="plone.app.dexterity.behaviors.filename.INameFromFileName"/>
  </property>
- <property name="schema">rpi.asthma_files_site.content.video_artifact.IVideoArtifact</property>
+ <property name="schema">collective.pece.content.video_artifact.IVideoArtifact</property>
  <property name="model_source"></property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
