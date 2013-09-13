@@ -43,8 +43,8 @@ class ArtifactEditMetadata():
         source = self.request.form.get('source')
         self.context.source = source
 
-        dublin_core_type = self.request.form.get('dublin_core_type')  # type
-        self.context.dublin_core_type = dublin_core_type  # is a reserved word
+        type_ = self.request.form.get('type_')  # type
+        self.context.type_ = type_  # is a reserved word
 
         self.context.reindexObject()
 
