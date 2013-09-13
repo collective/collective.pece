@@ -5,16 +5,17 @@ Changelog
 ------------------
 
 - Rename package: rpi.asthma_files_site -> collective.pece
-- Remove logo customization, part II: template-overrides 
-- Rename question -> asthma_question
+- Remove logo customization, part II: template-overrides directory removed
+- Rename ``question`` content type id -> ``asthma_question``
 - Add tests
-- More documentation
-- Provide Zotero.com and collective.documentviewer integration
+- Add more documentation
+- Add preliminary Zotero.com integration
+- Add collective.documentviewer integration
 
 0.0.4 - 09/02/2013
 ------------------
 
-- More documentation
+- Add more documentation
 - Change title/id generation on all artifacts to use INameFromFileName behavior
 
 0.0.3 - 08/28/2013
