@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.0.5 - 09/09/2013
+0.0.5 - 09/13/2013
 ------------------
 
 - Rename package: rpi.asthma_files_site -> collective.pece
