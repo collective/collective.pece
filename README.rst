@@ -101,4 +101,4 @@ PyZotero's feedparser version spec conflicts with Plone, see: https://github.com
 documentviewer
 ~~~~~~~~~~~~~~
 
-``collective.documentviewer``'s Dexterity integration is in alpha stage, see: https://github.com/collective/collective.documentviewer/issues/39.
+``collective.documentviewer``'s Dexterity integration is in alpha stage, see: https://github.com/collective/collective.documentviewer/issues/39 and http://stackoverflow.com/questions/18722104/how-do-i-integrate-collective-documentviewer-with-my-custom-dexterity-type.
