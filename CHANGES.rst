@@ -4,6 +4,7 @@ Changelog
 0.0.5 - 09/09/2013
 ------------------
 
+- Rename package: rpi.asthma_files_site -> collective.pece
 - Remove logo customization, part II: template-overrides 
 - Rename question -> asthma_question
 - Add tests
