@@ -1,3 +1,12 @@
+# Pyroma says:
+# ------------------------------
+# Checking .
+# Found collective.pece
+# ------------------------------
+# Final rating: 10/10
+# Your cheese is so fresh most people think it's a cream: Mascarpone
+# ------------------------------
+
 from setuptools import find_packages
 from setuptools import setup
 
