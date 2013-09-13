@@ -2,6 +2,6 @@ include *.png
 include *.py
 include *.rst
 include buildout.cfg
-recursive-include pece *.pt
-recursive-include pece *.xml
-recursive-include pece *.zcml
+recursive-include collective *.pt
+recursive-include collective *.xml
+recursive-include collective *.zcml
