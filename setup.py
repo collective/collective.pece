@@ -36,7 +36,7 @@ setup(
     ],
     packages=find_packages(),
     test_suite="collective.pece.tests",
-    url="https://github.com/ACLARKNET/pece",
+    url="https://github.com/collective/collective.pece",
     entry_points={
         'z3c.autoinclude.plugin': 'target = plone',
     },
