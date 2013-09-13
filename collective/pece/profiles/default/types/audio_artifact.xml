@@ -17,6 +17,7 @@
  <property name="allow_discussion">False</property>
  <property name="default_view">@@artifact-view</property>
  <property name="view_methods">
+  <element value="@@artifact_view"/>
   <element value="view"/>
  </property>
  <property name="default_view_fallback">False</property>

@@ -17,9 +17,9 @@
  <property name="allow_discussion">False</property>
  <property name="default_view">@@artifact-view</property>
  <property name="view_methods">
-  <element value="view"/>
   <element value="@@artifact_view"/>
   <element value="documentviewer"/>
+  <element value="view"/>
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
