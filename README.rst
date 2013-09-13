@@ -6,7 +6,7 @@ A collective inquiry in to complex conditions. Development sponsored by `Renssel
 About
 -----
 
-The PECE add-on for Plone is a research tool, currently in use by `RPI <http://theasthmafiles.org>`_ but available to anyone doing similar research. It features `Dexterity <https://github.com/plone/plone.dexterity>`_ content types and a `Collective Cover <https://github.com/collective/collective.cover>`_ integration to enable the creation of an "Asthma File": a collectively developed document containing artifacts and annotations.
+The PECE add-on for Plone is a research tool, currently in use by `RPI <http://theasthmafiles.org>`_ but available to anyone doing similar research. It features `Dexterity Content Types <https://github.com/plone/plone.dexterity>`_ and a `Collective Cover <https://github.com/collective/collective.cover>`_ integration to enable the creation of an "Asthma File": a collectively developed document containing artifacts and annotations.
 
 Installation
 ------------
