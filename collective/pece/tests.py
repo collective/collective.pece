@@ -2,7 +2,7 @@ from Products.PloneTestCase import PloneTestCase
 
 
 PloneTestCase.setupPloneSite(
-    extension_profiles=('rpi.asthma_files_site:default',)
+    extension_profiles=('collective.pece:default',)
 )
 
 
