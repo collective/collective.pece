@@ -21,9 +21,12 @@ setup(
         open("README.rst").read() + '\n' +
         open("CHANGES.rst").read()
         ),
-    name='pece',
+    name='collective.pece',
+    namespace_packages=[
+        'collective',
+    ],
     packages=find_packages(),
-    test_suite="pece.tests",
+    test_suite="collective.pece.tests",
     url="https://github.com/ACLARKNET/pece",
     entry_points={
         'z3c.autoinclude.plugin': 'target = plone',
