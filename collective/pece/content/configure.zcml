@@ -1,6 +1,5 @@
 <configure
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:grok="http://namespaces.zope.org/grok"
     >
 
     <!-- Todo:
@@ -39,9 +38,5 @@
         permission="zope2.Public"
         template="annotation_view.pt"
         />
-
-    <include package="five.grok" />
-
-    <grok:grok package="." />
 
 </configure>
