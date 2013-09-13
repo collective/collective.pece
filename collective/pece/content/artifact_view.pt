@@ -121,7 +121,7 @@
                         <a tal:attributes="href python:view.context.absolute_url() + '/edit'">edit</a>
 
                         <label>Type</label>
-                        <input class="input-xlarge" type="text" name="dublin_core_type" tal:attributes="value view/context/dublin_core_type">
+                        <input class="input-xlarge" type="text" name="type_" tal:attributes="value view/context/type_">
                     </div>
 
                     <div class="modal-footer">
