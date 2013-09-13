@@ -29,7 +29,7 @@ Changelog
 - Add empty registry
 - Remove dep on p.a.theming
 - Add preliminary installation and usage documentation.
-- UI change: '(Asthma) Question' -> Asthma Question.
+- Rename menu item: ``(Asthma) Question`` -> ``Asthma Question``.
 - Remove logo customization until Diazo theme is completed/supported.
 
 0.0.1 - 08/21/2013
