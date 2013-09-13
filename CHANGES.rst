@@ -9,7 +9,7 @@ Changelog
 - Rename ``question`` content type id -> ``asthma_question``
 - Add tests
 - Add more documentation
-- Add preliminary Zotero.com integration
+- Add preliminary Zotero integration
 - Add collective.documentviewer integration
 
 0.0.4 - 09/02/2013
