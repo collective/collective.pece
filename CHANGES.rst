@@ -4,6 +4,7 @@ Changelog
 0.0.5 - 09/13/2013
 ------------------
 
+- Rename reserved word "dublin_core-named" fields from ``dublin_core_<fieldname>`` to ``<fieldname>_``
 - Rename package: ``rpi.asthma_files_site`` -> ``collective.pece``
 - Remove logo customization, part II: template-overrides directory removed
 - Rename ``question`` content type id -> ``asthma_question``
