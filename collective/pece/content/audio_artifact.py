@@ -8,6 +8,12 @@ class IAudioArtifact(form.Schema):
     Content type
     """
 
+    # XXX How else can I make title field optional (i.e. without turning
+    # off dublin core behavior and re-implementing the same
+    # fields it already provides for me)?
+    title = TextLine(title=u"Title", required=False)
+    description = TextLine(title=u"Description", required=False)
+
     audio_artifact = NamedBlobFile(title=u"Audio Artifact")
     form.primary('audio_artifact')
 
