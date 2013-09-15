@@ -17,7 +17,7 @@ class IDocumentArtifact(form.Schema):
     title = TextLine(title=u"Title", required=False)
     description = TextLine(title=u"Description", required=False)
 
-    document_artifact = NamedBlobFile(title=u"Document Artifact")
+    file_ = NamedBlobFile(title=u"Document Artifact")
     form.primary('document_artifact')
 
     coverage = TextLine(title=u"Coverage", required=False)

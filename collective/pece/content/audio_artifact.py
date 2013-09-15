@@ -17,7 +17,7 @@ class IAudioArtifact(form.Schema):
     title = TextLine(title=u"Title", required=False)
     description = TextLine(title=u"Description", required=False)
 
-    audio_artifact = NamedBlobFile(title=u"Audio Artifact")
+    file_ = NamedBlobFile(title=u"Audio Artifact")
     form.primary('audio_artifact')
 
     coverage = TextLine(title=u"Coverage", required=False)
