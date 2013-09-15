@@ -105,7 +105,8 @@ class ArtifactView():
                     asthma_response.body = unicode(text)
             if add_another_question:
                 portal = self.context.portal_url()
-                self.request.response.redirect("%s/++add++question" % portal)
+                self.request.response.redirect(
+                    "%s/++add++asthma_question" % portal)
         return self.artifact_view()
 
     def get_questions(self):
