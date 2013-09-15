@@ -4,7 +4,8 @@ from zope.schema import TextLine
 
 class IAsthmaQuestion(form.Schema):
     """
-    Content type
+    Questions facilitate Annotations of Artifacts when researchers respond to
+    them in context.
     """
 
     title = TextLine(title=u"Question", required=True)
