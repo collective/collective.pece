@@ -10,7 +10,7 @@
             <div tal:condition="python: view.context.portal_type == 'audio_artifact'">
                 <audio controls>
                     <!-- Why @@edit ? -->
-                    <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.audio_artifact/@@download'" />
+                    <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.file_/@@download'" />
                     Your browser does not support the audio element.
                 </audio> 
                 <div tal:content="view/context/getId"></div>
@@ -26,7 +26,7 @@
             <div class="img-polaroid" tal:condition="python: view.context.portal_type == 'video_artifact'">
                 <video width="320" height="240" controls>
                     <!-- Why @@edit ? -->
-                    <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.video_artifact/@@download'" />
+                    <source tal:attributes="src python: view.context.absolute_url() + '/@@edit/++widget++form.widgets.file_/@@download'" />
                     Your browser does not support the video tag.
                 </video> 
                 <div tal:content="view/context/getId"></div>
