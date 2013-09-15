@@ -2,8 +2,7 @@
 <div metal:fill-slot="main">
     <div style="margin-left: 2em" tal:repeat="response view/context/objectValues">
         <div class="row">
-            <h1 tal:content="response/Title"></h1>
-            <p tal:content="response/description"></p>
+            <h1 tal:content="response/body"></h1>
         </div>
     </div>
 </div>

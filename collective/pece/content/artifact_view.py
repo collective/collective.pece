@@ -99,7 +99,7 @@ class ArtifactView():
                         annotation, 'response', title=title % question)
                     storage = IStorage(response)
                     storage[uid] = question
-                    response.description = text
+                    response.body = unicode(text)
             if add_another_question:
                 portal = self.context.portal_url()
                 self.request.response.redirect("%s/++add++question" % portal)
