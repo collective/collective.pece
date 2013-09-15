@@ -3,6 +3,10 @@ Platform for Experimental Ethnography (PECE)
 
 A collective inquiry in to complex conditions. Development sponsored by `Rensselaer Polytechnic Institute (RPI) <http://www.hass.rpi.edu/>`_.
 
+.. Warning::
+
+    To install ``collective.pece`` you must use ``feedparser`` version 5.1.3.
+
 About
 -----
 
