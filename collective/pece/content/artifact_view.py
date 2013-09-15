@@ -88,15 +88,18 @@ class ArtifactView():
                     add_another_question = True
             security_manager = getSecurityManager()
             userid = security_manager.getUser().getId()
+            content_type = "asthma_annotation"
             asthma_annotation = createContentInContainer(
-                self.context, 'asthma_annotation', title='%s-annotation' % userid)
+                self.context, content_type, title='%s-annotation' % userid)
             for uid, text in questions:  # Process questions
                 if text is not '':
                     question = uuidToObject(uid)
                     question = question.Title()
                     title = "Response to %s"
+                    content_type = "asthma_response"
+                    parent = asthma_annotation
                     asthma_response = createContentInContainer(
-                        asthma_annotation, 'asthma_response', title=title % question)
+                        parent, content_type, title=title % question)
                     storage = IStorage(asthma_response)
                     storage[uid] = question
                     asthma_response.body = unicode(text)
