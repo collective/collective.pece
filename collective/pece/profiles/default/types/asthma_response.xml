@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<object name="response" meta_type="Dexterity FTI" i18n:domain="plone"
+<object name="asthma_response" meta_type="Dexterity FTI" i18n:domain="plone"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
  <property name="title" i18n:translate="">Response</property>
  <property name="description" i18n:translate="">A response to a question within the context of an artifact annotation.</property>
  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
- <property name="factory">response</property>
+ <property name="factory">asthma_response</property>
  <property
-    name="add_view_expr">string:${folder_url}/++add++response</property>
+    name="add_view_expr">string:${folder_url}/++add++asthma_response</property>
  <property name="link_target"></property>
  <property name="immediate_view">view</property>
  <property name="global_allow">False</property>
@@ -23,7 +23,7 @@
  <property name="behaviors">
   <element value="plone.app.content.interfaces.INameFromTitle"/>
  </property>
- <property name="schema">collective.pece.content.response.IResponse</property>
+ <property name="schema">collective.pece.content.asthma_response.IAsthmaResponse</property>
  <property name="model_source"></property>
  <property name="model_file"></property>
  <property name="schema_policy">dexterity</property>
