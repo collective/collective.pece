@@ -4,7 +4,7 @@ from plone.supermodel import model
 from zope.schema import TextLine
 
 
-class IResponse(model.Schema, form.Schema):
+class IAsthmaResponse(model.Schema, form.Schema):
     """
     Questions facilitate Annotations of Artifacts when researchers respond to
     them in context.
