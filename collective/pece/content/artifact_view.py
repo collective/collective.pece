@@ -109,8 +109,9 @@ class ArtifactView():
         """
         Return content items of type "question" from the catalog
         """
+        portal_type = "asthma_question"
         return self.context.portal_catalog(
-            portal_type="asthma_question", sort_on="id", sort_order="ascending")
+            portal_type=portal_type, sort_on="id", sort_order="ascending")
 
     def get_contributor(self):
         """
