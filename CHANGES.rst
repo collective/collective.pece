@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.0.8 - 09/15/2013
+------------------
+
+- Fix content type titles: Asthma Annotation, Asthma Response
+
 0.0.7 - 09/15/2013
 ------------------
 
