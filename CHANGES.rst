@@ -4,6 +4,7 @@ Changelog
 0.0.7 - 09/15/2013
 ------------------
 
+- Reorder artifact content type fields
 - Rename artifact primary fields to ``file_``
 - Add ``artifact-view`` to display menu
 
