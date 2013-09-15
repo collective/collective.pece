@@ -1,6 +1,7 @@
 include *.png
 include *.py
 include *.rst
+include Makefile
 include buildout.cfg
 recursive-include collective *.pt
 recursive-include collective *.xml
