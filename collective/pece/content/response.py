@@ -10,4 +10,5 @@ class IResponse(model.Schema, form.Schema):
     them in context.
     """
 
-    title = TextLine(title=u"Question", required=True)
+    title = TextLine(title=u"Response", required=False)
+    body = RichText(title=u"Response", required=True)
