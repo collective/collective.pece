@@ -20,6 +20,7 @@ class IVideoArtifact(form.Schema):
     file_ = NamedBlobFile(title=u"Video Artifact")
     form.primary('file_')
 
+    # XXX How can I factor these out of each content type?
     coverage = TextLine(title=u"Coverage", required=False)
     format_ = TextLine(title=u"Format", required=False)
     identifier = TextLine(title=u"Identifier", required=False)

@@ -21,6 +21,7 @@ class IImageArtifact(form.Schema):
     image = NamedBlobImage(title=u"Image Artifact")
     form.primary('image')
 
+    # XXX How can I factor these out of each content type?
     coverage = TextLine(title=u"Coverage", required=False)
     format_ = TextLine(title=u"Format", required=False)
     identifier = TextLine(title=u"Identifier", required=False)

@@ -18,8 +18,9 @@ class IDocumentArtifact(form.Schema):
     description = TextLine(title=u"Description", required=False)
 
     file_ = NamedBlobFile(title=u"Document Artifact")
-    form.primary('file_')
+    form.primary('file_')  # XXX Must be primary to work with c.documentviewer
 
+    # XXX How can I factor these out of each content type?
     coverage = TextLine(title=u"Coverage", required=False)
     format_ = TextLine(title=u"Format", required=False)
     identifier = TextLine(title=u"Identifier", required=False)
